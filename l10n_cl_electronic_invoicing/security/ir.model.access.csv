@@ -33,8 +33,6 @@ edit_account_move_consumo_folios_anulaciones_manager,account_move_consumo_folios
 access_account_move_consumo_folios_anulaciones_user,account_move_consumo_folios_anulaciones_user,model_account_move_consumo_folios_anulaciones,,1,0,0,0
 access_sii_activity_description_user,sii.activity.description.user,model_sii_activity_description,,1,0,1,0
 edit_sii_activity_description_manager,sii.activity.description.manager,model_sii_activity_description,,1,1,1,1
-access_dte_caf_manager,access_dte_caf_manager,model_dte_caf,account.group_account_manager,1,1,1,1
-access_dte_caf,access_dte_caf,model_dte_caf,,1,0,0,0
 edit_account_invoice_gdr,edit_account_invoice_gdr,model_account_invoice_gdr,account.group_account_invoice,1,1,1,1
 access_account_invoice_gdr,access_account_invoice_gdr,model_account_invoice_gdr,,1,0,0,0
 edit_sii_xml_envio,edit_sii_xml_envio,model_sii_xml_envio,account.group_account_invoice,1,1,1,1
