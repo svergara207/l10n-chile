@@ -4,8 +4,8 @@
 # Copyright (C) 2019 Open Source Integrators
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 {
-    "name": "Electronic Invoicing for Chile",
-    "summary": "Sign your documents and send them to SII.",
+    "name": "Electronic Shipping for Chile",
+    "summary": "Sign your delivery orders and send them to SII.",
     "version": "12.0.1.0.0",
     "category": "Localization/Chile",
     "author": "Daniel Santibáñez Polanco, "
@@ -16,7 +16,7 @@
     "website": "https://github.com/OCA/l10n-chile",
     "license": "AGPL-3",
     "depends": [
-        "l10n_cl_dte_account",
+        "l10n_cl_etd_account",
         "stock",
     ],
     "data": [
