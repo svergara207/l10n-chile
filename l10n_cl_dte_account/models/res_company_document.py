@@ -9,5 +9,5 @@ class ResCompanyDocument(models.Model):
     _inherit = 'res.company.document'
 
     name = fields.Selection(
-        selection_add=[('account.invoice', 'Invoice'),
-                       ('stock.picking', 'Stock Picking')])
+        selection_add=[('invoice', 'Invoice'),
+                       ('ticket', 'Ticket')])
