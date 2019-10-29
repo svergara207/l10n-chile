@@ -1,0 +1,9 @@
+<odoo>
+
+    <record id="company_document_stock_picking" model="res.company.document">
+        <field name="name">picking</field>
+        <field name="xsd"/>
+        <field name="xml_template"/>
+    </record>
+
+</odoo>
