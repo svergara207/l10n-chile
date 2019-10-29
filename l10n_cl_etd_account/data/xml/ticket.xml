@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<EnvioBOLETA xmlns="http://www.sii.cl/SiiDte" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sii.cl/SiiDte EnvioBOLETA_v11.xsd" version="1.0">
+<SetDTE ID="SetDoc">
+<Caratula version="1.0">
+<RutEmisor>76850314-1</RutEmisor>
+<RutEnvia>14748268-K</RutEnvia>
+<RutReceptor>60803000-K</RutReceptor>
+<FchResol>2014-08-22</FchResol>
+<NroResol>80</NroResol>
+<TmstFirmaEnv>2019-05-24T16:04:09</TmstFirmaEnv>
+<SubTotDTE>
+<TpoDTE>39</TpoDTE>
+<NroDTE>1</NroDTE>
+</SubTotDTE>
+</Caratula>
+<DTE xmlns="http://www.sii.cl/SiiDte" version="1.0">
+<Documento ID="F1T39"><Encabezado><IdDoc><TipoDTE>39</TipoDTE><Folio>1</Folio><FchEmis>2019-04-04</FchEmis><IndServicio>3</IndServicio><IndMntNeto>2</IndMntNeto></IdDoc><Emisor><RUTEmisor>76850314-1</RUTEmisor><RznSocEmisor>HOME DESIGN SPA</RznSocEmisor><GiroEmisor>VENTA AL POR MENOR DE ARTICULOS DE FERRETERIA Y MATERIALES DE CONSTRUCCION</GiroEmisor><DirOrigen>CAUPOLICAN 598 </DirOrigen><CmnaOrigen>Concepci&#243;n</CmnaOrigen><CiudadOrigen>Concepci&#243;n</CiudadOrigen></Emisor><Receptor><RUTRecep>96955280-9</RUTRecep><RznSocRecep>COMISIONES Y COBRANZAS S A</RznSocRecep><DirRecep>SANTO DOMINGO 979  PISO5</DirRecep><CmnaRecep>Santiago</CmnaRecep><CiudadRecep>Santiago</CiudadRecep></Receptor><Totales><MntTotal>102910</MntTotal></Totales></Encabezado><Detalle><NroLinDet>1</NroLinDet><CdgItem><TpoCodigo>INT1</TpoCodigo><VlrCodigo>15C4731</VlrCodigo></CdgItem><NmbItem>SET DE 3PC MACETERO OVALADO ENLOZADO BLANCO</NmbItem><DscItem>LOCAL/0001</DscItem><QtyItem>1.0</QtyItem><UnmdItem>Unid</UnmdItem><PrcItem>11756.0</PrcItem><MontoItem>11756</MontoItem></Detalle><Detalle><NroLinDet>2</NroLinDet><CdgItem><TpoCodigo>INT1</TpoCodigo><VlrCodigo>15C4744R</VlrCodigo></CdgItem><NmbItem>SET DE 3PC MACETERO RECTANGULAR ENLOZADO BLANCO</NmbItem><DscItem>LOCAL/0002</DscItem><QtyItem>1.0</QtyItem><UnmdItem>Unid</UnmdItem><PrcItem>9235.0</PrcItem><MontoItem>9235</MontoItem></Detalle><Detalle><NroLinDet>3</NroLinDet><CdgItem><TpoCodigo>INT1</TpoCodigo><VlrCodigo>16M030</VlrCodigo></CdgItem><NmbItem>SET DE 3PC BALDE METAL</NmbItem><DscItem>LOCAL/0003</DscItem><QtyItem>1.0</QtyItem><UnmdItem>Unid</UnmdItem><PrcItem>10076.0</PrcItem><MontoItem>10076</MontoItem></Detalle><Detalle><NroLinDet>4</NroLinDet><CdgItem><TpoCodigo>INT1</TpoCodigo><VlrCodigo>16M1550</VlrCodigo></CdgItem><NmbItem>REGADERA BAJA METAL ENVEJECIDA</NmbItem><DscItem>LOCAL/0004</DscItem><QtyItem>2.0</QtyItem><UnmdItem>Unid</UnmdItem><PrcItem>5874.0</PrcItem><MontoItem>11748</MontoItem></Detalle><Detalle><NroLinDet>5</NroLinDet><CdgItem><TpoCodigo>INT1</TpoCodigo><VlrCodigo>1797-L</VlrCodigo></CdgItem><NmbItem>FLORERO NORDICO SIMPLE 4</NmbItem><DscItem>LOCAL/0005</DscItem><QtyItem>4.0</QtyItem><UnmdItem>Unid</UnmdItem><PrcItem>10916.0</PrcItem><MontoItem>43664</MontoItem></Detalle>
+<TED version="1.0"><DD><RE>76850314-1</RE><TD>39</TD><F>1</F><FE>2019-04-04</FE><RR>96955280-9</RR><RSR>COMISIONES Y COBRANZAS S A</RSR><MNT>102910</MNT><IT1>SET DE 3PC MACETERO OVALADO ENLOZADO BLA</IT1><CAF version="1.0"><DA><RE>76850314-1</RE><RS>HOME DESIGN SPA</RS><TD>39</TD><RNG><D>1</D><H>1000</H></RNG><FA>2019-03-31</FA><RSAPK><M>siEISAgM2pSywlGFg7IvYuaxE0vymBdAZFo/RayX9+7H/U9parj1G888RSWSYPTP2ZZrUzVGuABqjR/iUBjImQ==</M><E>Aw==</E></RSAPK><IDK>300</IDK></DA><FRMA algoritmo="SHA1withRSA">EfRHVfHNpVQ+9uvhkuBba6bydqINg/53akXE3QFOjIcSMrbLjF/PbnNjO377N6B2otK1HZe2lUw0yPYkSsscrg==</FRMA></CAF><TSTED>2019-04-04T16:49:14</TSTED></DD><FRMT algoritmo="SHA1withRSA">XJ0bdLiB/rPsMTu1rLTOdj730qPgOUuVrsal508CWuYGhJrAriljsyIJQG2MzjLd
+3RPkOAbKTgh5JX/a7aCGRA==</FRMT></TED><TmstFirma>2019-04-04T16:49:14</TmstFirma>
+</Documento>
+
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI="#F1T39"><Transforms><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>nVoh57gNfMSXTxS0L8bAbT2o8F0=</DigestValue></Reference></SignedInfo><SignatureValue>PJR5Uamf6dXwBgrj8XCPUak2eY8mLqoDGodMNMfQMZG1pewkI4uoH8CXf6+lgN9l
+JgacFeV0vXqcSyoemNVRPy4PxuGH58b/U701Y2pnLsODANNG+KhRjZUi/15EKkEr
+0jCL/s932msBAyjXpOHuYQwZeJQOJQ39h7JY+dGzDgU=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pvL6+4mroqCgxa74rGgpgY8u+YHcN9OAwRH2hTK7bRbHxL1aBJ5cE9qeocf3YAyG
+b2Y6oGjJlW1fdZNe6QSMjhI+bEtOi/sbpsMUtpjLojO5Ta6WFloTaK5X/cHxAHW/
+c0dyBgALPp8thlPACn6O2xEvNsxozEJP55A1ft0sc2k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>
+MIIGYTCCBUmgAwIBAgIKK2cRoAAAAASjdzANBgkqhkiG9w0BAQUFADCB0jELMAkG
+A1UEBhMCQ0wxHTAbBgNVBAgTFFJlZ2lvbiBNZXRyb3BvbGl0YW5hMREwDwYDVQQH
+EwhTYW50aWFnbzEUMBIGA1UEChMLRS1DRVJUQ0hJTEUxIDAeBgNVBAsTF0F1dG9y
+aWRhZCBDZXJ0aWZpY2Fkb3JhMTAwLgYDVQQDEydFLUNFUlRDSElMRSBDQSBGSVJN
+QSBFTEVDVFJPTklDQSBTSU1QTEUxJzAlBgkqhkiG9w0BCQEWGHNjbGllbnRlc0Bl
+LWNlcnRjaGlsZS5jbDAeFw0xNjA3MjcyMjQ0MDNaFw0xOTA3MjcyMjQ0MDNaMIHk
+MQswCQYDVQQGEwJDTDEVMBMGA1UECAwMREVMIEJJT0LDjU8gMRMwEQYDVQQHEwpD
+b25jZXBjaW9uMR8wHQYDVQQKExZjb21lcmNpYWwgeWFuIGxpbWl0YWRhMUkwRwYD
+VQQLE0Bjb21lcmNpYWxpemFkb3JhIHkgZGlzdHJpYnVpZG9yYSBkZSBhcnRpY3Vs
+byBkZSBmZXJyZXRlcmlhIGhvZ2FyMRkwFwYDVQQDDBBzaHVuc2hlbmcgeWFuZyAq
+MSIwIAYJKoZIhvcNAQkBFhNxd3NvbmczMTZAZ21haWwuY29tMIGfMA0GCSqGSIb3
+DQEBAQUAA4GNADCBiQKBgQCm8vr7iauioKDFrvisaCmBjy75gdw304DBEfaFMrtt
+FsfEvVoEnlwT2p6hx/dgDIZvZjqgaMmVbV91k17pBIyOEj5sS06L+xumwxS2mMui
+M7lNrpYWWhNorlf9wfEAdb9zR3IGAAs+ny2GU8AKfo7bES82zGjMQk/nkDV+3Sxz
+aQIDAQABo4ICpzCCAqMwPQYJKwYBBAGCNxUHBDAwLgYmKwYBBAGCNxUIgtyDL4WT
+jGaF1Z0XguLcJ4Hv7DxhgZrnFYav4BUCAWQCAQQwHQYDVR0OBBYEFNgjl6ICY8y0
+FmWGAvZ7dMFM/oNZMAsGA1UdDwQEAwIE8DAfBgNVHSMEGDAWgBR44T6f0hKzejyN
+zTAOU7NDKQezVTA+BgNVHR8ENzA1MDOgMaAvhi1odHRwOi8vY3JsLmUtY2VydGNo
+aWxlLmNsL2VjZXJ0Y2hpbGVjYUZFUy5jcmwwOgYIKwYBBQUHAQEELjAsMCoGCCsG
+AQUFBzABhh5odHRwOi8vb2NzcC5lY2VydGNoaWxlLmNsL29jc3AwIwYDVR0RBBww
+GqAYBggrBgEEAcEBAaAMFgoxNDc0ODI2OC1LMCMGA1UdEgQcMBqgGAYIKwYBBAHB
+AQKgDBYKOTY5MjgxODAtNTCCAU0GA1UdIASCAUQwggFAMIIBPAYIKwYBBAHDUgUw
+ggEuMC0GCCsGAQUFBwIBFiFodHRwOi8vd3d3LmUtY2VydGNoaWxlLmNsL0NQUy5o
+dG0wgfwGCCsGAQUFBwICMIHvHoHsAEMAZQByAHQAaQBmAGkAYwBhAGQAbwAgAEYA
+aQByAG0AYQAgAFMAaQBtAHAAbABlAC4AIABIAGEAIABzAGkAZABvACAAdgBhAGwA
+aQBkAGEAZABvACAAZQBuACAAZgBvAHIAbQBhACAAcAByAGUAcwBlAG4AYwBpAGEA
+bAAsACAAcQB1AGUAZABhAG4AZABvACAAaABhAGIAaQBsAGkAdABhAGQAbwAgAGUA
+bAAgAEMAZQByAHQAaQBmAGkAYwBhAGQAbwAgAHAAYQByAGEAIAB1AHMAbwAgAHQA
+cgBpAGIAdQB0AGEAcgBpAG8wDQYJKoZIhvcNAQEFBQADggEBABJLjBIaBK3eXmVP
+Li7RtfPm1YT2Y+Zo/gp8/paPAhppBr1qK8kXXHOu+agXLxfeXAAJJdv4+GljROhH
+CjnpQV7/B8TEAqEc9hmve/caJIiX/uv9Co2nOvfXU6SWdP01Qwa+Wv0E6Gv+wN6l
+YKrY8EHUeg0C54V0UbnofI2zbb+QyjWop1rmmLchdTL/OoZc/1WR1po6nTfVsZ5M
+w+ibhoJXzJKgzL1ix1Asf1DrfcoCMSi45pfpLarEuVqOWZOEW7V1DnnhVFSbRnzO
+S2sViB5pr277gvtfvRlJXSSzYqQTUF/xCI3TctrbAa2XUFNidxlWPDwg8PXBCqUi
+vaEVTNk=</X509Certificate></X509Data></KeyInfo></Signature></DTE>
+</SetDTE>
+
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI="#SetDoc"><Transforms><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>+AMfyp1hl5hM/vwnJxCr2bhXZwM=</DigestValue></Reference></SignedInfo><SignatureValue>FCvARhCFkR2nyLnyROZpsQn8k9nHvLU40c+zRtR37IoI7Ld0oc9Kn0iP5uWoIhHw
+mqvLYykrfwanrPbE+SSXRWspKWWiuEV0XJxYaVIWjXZroSHjAyeaU23X6ZV7cFFr
+kGf9r5AK+qBLhytke0EX1/Y5hjW7jm72usjLg1IT/xo=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pvL6+4mroqCgxa74rGgpgY8u+YHcN9OAwRH2hTK7bRbHxL1aBJ5cE9qeocf3YAyG
+b2Y6oGjJlW1fdZNe6QSMjhI+bEtOi/sbpsMUtpjLojO5Ta6WFloTaK5X/cHxAHW/
+c0dyBgALPp8thlPACn6O2xEvNsxozEJP55A1ft0sc2k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>
+MIIGYTCCBUmgAwIBAgIKK2cRoAAAAASjdzANBgkqhkiG9w0BAQUFADCB0jELMAkG
+A1UEBhMCQ0wxHTAbBgNVBAgTFFJlZ2lvbiBNZXRyb3BvbGl0YW5hMREwDwYDVQQH
+EwhTYW50aWFnbzEUMBIGA1UEChMLRS1DRVJUQ0hJTEUxIDAeBgNVBAsTF0F1dG9y
+aWRhZCBDZXJ0aWZpY2Fkb3JhMTAwLgYDVQQDEydFLUNFUlRDSElMRSBDQSBGSVJN
+QSBFTEVDVFJPTklDQSBTSU1QTEUxJzAlBgkqhkiG9w0BCQEWGHNjbGllbnRlc0Bl
+LWNlcnRjaGlsZS5jbDAeFw0xNjA3MjcyMjQ0MDNaFw0xOTA3MjcyMjQ0MDNaMIHk
+MQswCQYDVQQGEwJDTDEVMBMGA1UECAwMREVMIEJJT0LDjU8gMRMwEQYDVQQHEwpD
+b25jZXBjaW9uMR8wHQYDVQQKExZjb21lcmNpYWwgeWFuIGxpbWl0YWRhMUkwRwYD
+VQQLE0Bjb21lcmNpYWxpemFkb3JhIHkgZGlzdHJpYnVpZG9yYSBkZSBhcnRpY3Vs
+byBkZSBmZXJyZXRlcmlhIGhvZ2FyMRkwFwYDVQQDDBBzaHVuc2hlbmcgeWFuZyAq
+MSIwIAYJKoZIhvcNAQkBFhNxd3NvbmczMTZAZ21haWwuY29tMIGfMA0GCSqGSIb3
+DQEBAQUAA4GNADCBiQKBgQCm8vr7iauioKDFrvisaCmBjy75gdw304DBEfaFMrtt
+FsfEvVoEnlwT2p6hx/dgDIZvZjqgaMmVbV91k17pBIyOEj5sS06L+xumwxS2mMui
+M7lNrpYWWhNorlf9wfEAdb9zR3IGAAs+ny2GU8AKfo7bES82zGjMQk/nkDV+3Sxz
+aQIDAQABo4ICpzCCAqMwPQYJKwYBBAGCNxUHBDAwLgYmKwYBBAGCNxUIgtyDL4WT
+jGaF1Z0XguLcJ4Hv7DxhgZrnFYav4BUCAWQCAQQwHQYDVR0OBBYEFNgjl6ICY8y0
+FmWGAvZ7dMFM/oNZMAsGA1UdDwQEAwIE8DAfBgNVHSMEGDAWgBR44T6f0hKzejyN
+zTAOU7NDKQezVTA+BgNVHR8ENzA1MDOgMaAvhi1odHRwOi8vY3JsLmUtY2VydGNo
+aWxlLmNsL2VjZXJ0Y2hpbGVjYUZFUy5jcmwwOgYIKwYBBQUHAQEELjAsMCoGCCsG
+AQUFBzABhh5odHRwOi8vb2NzcC5lY2VydGNoaWxlLmNsL29jc3AwIwYDVR0RBBww
+GqAYBggrBgEEAcEBAaAMFgoxNDc0ODI2OC1LMCMGA1UdEgQcMBqgGAYIKwYBBAHB
+AQKgDBYKOTY5MjgxODAtNTCCAU0GA1UdIASCAUQwggFAMIIBPAYIKwYBBAHDUgUw
+ggEuMC0GCCsGAQUFBwIBFiFodHRwOi8vd3d3LmUtY2VydGNoaWxlLmNsL0NQUy5o
+dG0wgfwGCCsGAQUFBwICMIHvHoHsAEMAZQByAHQAaQBmAGkAYwBhAGQAbwAgAEYA
+aQByAG0AYQAgAFMAaQBtAHAAbABlAC4AIABIAGEAIABzAGkAZABvACAAdgBhAGwA
+aQBkAGEAZABvACAAZQBuACAAZgBvAHIAbQBhACAAcAByAGUAcwBlAG4AYwBpAGEA
+bAAsACAAcQB1AGUAZABhAG4AZABvACAAaABhAGIAaQBsAGkAdABhAGQAbwAgAGUA
+bAAgAEMAZQByAHQAaQBmAGkAYwBhAGQAbwAgAHAAYQByAGEAIAB1AHMAbwAgAHQA
+cgBpAGIAdQB0AGEAcgBpAG8wDQYJKoZIhvcNAQEFBQADggEBABJLjBIaBK3eXmVP
+Li7RtfPm1YT2Y+Zo/gp8/paPAhppBr1qK8kXXHOu+agXLxfeXAAJJdv4+GljROhH
+CjnpQV7/B8TEAqEc9hmve/caJIiX/uv9Co2nOvfXU6SWdP01Qwa+Wv0E6Gv+wN6l
+YKrY8EHUeg0C54V0UbnofI2zbb+QyjWop1rmmLchdTL/OoZc/1WR1po6nTfVsZ5M
+w+ibhoJXzJKgzL1ix1Asf1DrfcoCMSi45pfpLarEuVqOWZOEW7V1DnnhVFSbRnzO
+S2sViB5pr277gvtfvRlJXSSzYqQTUF/xCI3TctrbAa2XUFNidxlWPDwg8PXBCqUi
+vaEVTNk=</X509Certificate></X509Data></KeyInfo></Signature></EnvioBOLETA>
