@@ -1,0 +1,15 @@
+<odoo>
+
+    <record id="company_document_account_invoice" model="res.company.document">
+        <field name="name">account.invoice</field>
+        <field name="xsd"/>
+        <field name="xml_template"/>
+    </record>
+
+    <record id="company_document_stock_picking" model="res.company.document">
+        <field name="name">stock.picking</field>
+        <field name="xsd"/>
+        <field name="xml_template"/>
+    </record>
+
+</odoo>
