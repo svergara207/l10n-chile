@@ -12,3 +12,4 @@ class AccountInvoice(models.Model):
     reference_ids = fields.One2many(
         "sii.reference", "invoice_id", readonly=True,
         states={"draft": [("readonly", False)]})
+    class_id = fields.Many2one("sii.document.class", string="SII Document")
