@@ -4,7 +4,7 @@
         <field name="name">sii.concept.type.form</field>
         <field name="model">sii.concept.type</field>
         <field name="arch" type="xml">
-            <form string="SII Concept type">
+            <form string="SII Concept Type">
                 <group>
                     <field name="name"/>
                     <field name='product_types'/>
@@ -19,7 +19,7 @@
         <field name="name">sii.concept.type.tree</field>
         <field name="model">sii.concept.type</field>
         <field name="arch" type="xml">
-            <tree string="SII Concept type">
+            <tree string="SII Concept Types">
                 <field name="name"/>
                 <field name='product_types'/>
                 <field name="sii_code"/>
@@ -29,13 +29,11 @@
     </record>
 
     <record model="ir.actions.act_window" id="act_sii_concept_type">
-        <field name="name">SII Concept type</field>
+        <field name="name">SII Concept Types</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">sii.concept.type</field>
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
     </record>
-
-    <menuitem name="Concept Types" action="act_sii_concept_type" id="menu_action_sii_concept_type" parent="l10n_cl_electronic_invoicing.menu_sii_config"/>
 
 </odoo>

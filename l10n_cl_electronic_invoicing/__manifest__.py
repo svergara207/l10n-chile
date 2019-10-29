@@ -21,6 +21,7 @@
         "l10n_cl_toponym",
         "l10n_cl_chart_of_account",
         "l10n_cl_sii_activity",
+        "l10n_cl_sii_reference",
         "report_xlsx",
         "portal",
     ],

@@ -7,8 +7,8 @@
             <form string="SII Document Class">
                 <group>
                     <field name="name"/>
-                    <field name='sii_code'/>
-                    <field name='doc_code_prefix'/>
+                    <field name='code'/>
+                    <field name='prefix'/>
                     <field name='code_template'/>
                     <field name='document_letter_id'/>
                     <field name='report_name'/>
@@ -25,10 +25,10 @@
         <field name="name">sii.document.class.tree</field>
         <field name="model">sii.document.class</field>
         <field name="arch" type="xml">
-            <tree string="SII Document Class">
+            <tree string="SII Document Classes">
                 <field name="name"/>
-                <field name="sii_code"/>
-                <field name="doc_code_prefix"/>
+                <field name="code"/>
+                <field name="prefix"/>
                 <field name="code_template"/>
                 <field name="document_letter_id"/>
                 <field name='report_name'/>
@@ -40,13 +40,11 @@
     </record>
 
     <record model="ir.actions.act_window" id="act_sii_document_class">
-        <field name="name">SII Document Class</field>
+        <field name="name">SII Document Classes</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">sii.document.class</field>
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
     </record>
-
-    <menuitem name="Document Classes" action="act_sii_document_class" id="menu_action_sii_document_class" parent="l10n_cl_electronic_invoicing.menu_sii_config"/>
 
 </odoo>

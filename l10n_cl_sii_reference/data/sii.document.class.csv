@@ -1,4 +1,4 @@
-id,active,document_letter_id/id,sii_code,dte,doc_code_prefix,document_type,report_name,name,code_template,use_prefix
+id,active,document_letter_id/id,code,dte,prefix,document_type,report_name,name,code_template,use_prefix
 dc_I_f_dtn,True,dl_i,29,False,FAI ,invoice,FAI ,Factura de Inicio,FAI,
 dc_a_f_dtn,True,dl_a,30,False,FAC ,invoice,FACTURA ,Factura,FVA,
 dc_y_f_dtn,True,dl_c,32,False,FNA ,invoice,F-EXENTA ,Factura de Ventas y Servicios no Afectos o Exentos de IVA,FVE,

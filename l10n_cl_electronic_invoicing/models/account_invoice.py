@@ -205,12 +205,6 @@ class AccountInvoice(models.Model):
         related="journal_id.use_documents", string="Use Documents?",
         readonly=True
     )
-    referencias = fields.One2many(
-        "account.invoice.referencias",
-        "invoice_id",
-        readonly=True,
-        states={"draft": [("readonly", False)]},
-    )
     forma_pago = fields.Selection(
         [("1", "Contado"), ("2", "Crédito"), ("3", "Gratuito")],
         string="Forma de pago",

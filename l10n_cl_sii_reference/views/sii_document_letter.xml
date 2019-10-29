@@ -11,7 +11,7 @@
                     <field name="issuer_ids"/>
                     <field name="receptor_ids"/>
                     <field name="vat_discriminated"/>
-                    <field name="sii_document_class_ids" colspan="4"/>
+                    <field name="class_ids" colspan="4"/>
                 </group>
             </form>
         </field>
