@@ -13,8 +13,9 @@
             </field>
             <xpath expr='//notebook' position="inside">
                 <page string="CAF Files"
-                      attrs="{'invisible': [('is_dte','=',False)]}">
-                    <field name="folio_ids"  context="{'default_sequence_id':active_id, 'default_company_id':company_id}">
+                      attrs="{'invisible': [('is_dte', '=', False)]}">
+                    <field name="folio_ids"
+                           context="{'default_sequence_id':active_id, 'default_company_id':company_id}">
                         <tree string="DTE CAF Files">
                             <field name="name"/>
                             <field name="start_nm"/>

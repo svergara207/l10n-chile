@@ -51,7 +51,7 @@ class IrSequence(models.Model):
                 i.qty_available = i.get_qty_available()
 
     class_id = fields.Many2one("sii.document.class", string="Document Type")
-    is_dte = fields.Boolean(string="IS DTE?",
+    is_dte = fields.Boolean(string="Is DTE?",
                             related="class_id.dte")
     folio_ids = fields.One2many("ir.sequence.folio", "sequence_id",
                                 string="DTE Caf")
