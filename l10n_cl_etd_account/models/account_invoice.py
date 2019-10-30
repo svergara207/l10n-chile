@@ -3,6 +3,7 @@
 # Copyright (C) 2019 CubicERP
 # Copyright (C) 2019 Open Source Integrators
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
+import base64
 import logging
 import os
 from collections import namedtuple
@@ -51,23 +52,31 @@ class AccountInvoice(models.Model):
             'today': fields.datetime.today(),
         })
         # Render the XML
-        xml_file = self.File_details(self.move_id.name + '.xml',
+        xml_file = self.File_details(self.number + '.xml',
                                      template.render(kwargs))
         xml = str.encode(xml_file.filecontent)
+        # Attache XML file to the invoice
+        self.env['ir.attachment'].create({
+            'name': xml_file.filename,
+            'type': 'binary',
+            'datas': base64.b64encode(xml_file.filecontent.encode("utf-8")),
+            'datas_fname': xml_file.filename,
+            'res_model': 'account.invoice',
+            'res_id': self.id})
         # Check the rendered XML against the XSD
-        xsd_file = document_id.xsd
-        try:
-            xmlschema_doc = etree.parse(os.path.join(
-                self.template_path, '../xsd/' + xsd_file))
-            xmlschema = etree.XMLSchema(xmlschema_doc)
-            xml_doc = etree.fromstring(xml)
-            result = xmlschema.validate(xml_doc)
-            if not result:
-                xmlschema.assert_(xml_doc)
-            return xml
-        except AssertionError as e:
-            _logger.warning(etree.tostring(xml_doc))
-            raise UserError(_("XML Malformed Error: %s") % e.args)
+        # xsd_file = document_id.xsd
+        # try:
+        #     xmlschema_doc = etree.parse(os.path.join(
+        #         self.template_path, '../xsd/' + xsd_file))
+        #     xmlschema = etree.XMLSchema(xmlschema_doc)
+        #     xml_doc = etree.fromstring(xml)
+        #     result = xmlschema.validate(xml_doc)
+        #     if not result:
+        #         xmlschema.assert_(xml_doc)
+        #     return xml
+        # except AssertionError as e:
+        #     _logger.warning(etree.tostring(xml_doc))
+        #     raise UserError(_("XML Malformed Error: %s") % e.args)
 
     def sign_xml(self, xml):
         # Use the SSL Certificate to sign the XML

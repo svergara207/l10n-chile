@@ -21,7 +21,7 @@
                 <Encabezado>
                     <IdDoc>
                         <TipoDTE>{{ o.class_id.code }}</TipoDTE>
-                        <Folio>{{ o.name }}</Folio>
+                        <Folio>{{ o.number }}</Folio>
                         <FchEmis>{{ o.date_invoice }}</FchEmis>
                         <FmaPago>1</FmaPago>
                         <FchVenc>{{ o.date_due }}</FchVenc>
@@ -55,7 +55,7 @@
                 </Encabezado>
                 {% for line in o.invoice_line_ids %}
                 <Detalle>
-                    <NroLinDet>{{ line.index }}</NroLinDet>
+                    <NroLinDet>{{ loop.index }}</NroLinDet>
                     <CdgItem>
                         {% if line.product_id.barcode %}
                         <TpoCodigo>EAN13</TpoCodigo>
