@@ -19,6 +19,11 @@
         "l10n_cl_etd_account",
         "stock",
     ],
+    "external_dependencies": {
+        "python": [
+            "jinja2",
+        ]
+    },
     "data": [
         "data/res_company_document.xml",
     ],
