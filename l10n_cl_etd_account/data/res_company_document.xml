@@ -2,14 +2,14 @@
 
     <record id="company_document_account_invoice" model="res.company.document">
         <field name="name">invoice</field>
-        <field name="xsd">/data/xsd/DTE_v10.xsd</field>
-        <field name="xml">/data/xml/invoice.xml</field>
+        <field name="xsd">DTE_v10.xsd</field>
+        <field name="xml">invoice.xml</field>
     </record>
 
     <record id="company_document_account_ticket" model="res.company.document">
         <field name="name">ticket</field>
-        <field name="xsd">/data/xsd/EnvioBOLETA_v11.xsd</field>
-        <field name="xml">/data/xml/ticket.xml</field>
+        <field name="xsd">EnvioBOLETA_v11.xsd</field>
+        <field name="xml">ticket.xml</field>
     </record>
 
 </odoo>

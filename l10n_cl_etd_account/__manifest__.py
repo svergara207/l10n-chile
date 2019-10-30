@@ -25,6 +25,9 @@
         "l10n_cl_sii_activity",
         "l10n_cl_sii_folio",
     ],
+    "external_dependencies": {
+        "python": ["jinja2"]
+    },
     "data": [
         "security/ir.model.access.csv",
         "data/backend.acp.csv",

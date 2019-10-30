@@ -3,21 +3,71 @@
 # Copyright (C) 2019 CubicERP
 # Copyright (C) 2019 Open Source Integrators
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
-from odoo import api, models, _
+import logging
+import os
+from collections import namedtuple
+from jinja2 import Environment, FileSystemLoader
+from lxml import etree
+from odoo import api, fields, models, _
+from odoo.exceptions import UserError
 from ...queue_job.job import job
 from ...queue_job.exception import RetryableJobError
 
+_logger = logging.getLogger(__name__)
 
 class AccountInvoice(models.Model):
     _inherit = 'account.invoice'
 
-    def build_xml(self):
-        # Build the XML of the invoice
-        return True
+    _env = None
+    _etd = ()
+    File_details = namedtuple('file_details', ['filename', 'filecontent'])
+    template_path = '{}/../data/xml/'.format(os.path.dirname(__file__))
 
-    def check_xml(self, xml):
-        # Check the generate XML against the XSD
-        return True
+    @api.model
+    def set_jinja_env(self):
+        """Set the Jinja2 environment.
+        The environment will helps the system to find the templates to render.
+        :param api_version: string, odoo api
+        :return: jinja2.Environment instance.
+        """
+        if self._env is None:
+            self._env = Environment(
+                lstrip_blocks=True,
+                trim_blocks=True,
+                loader=FileSystemLoader(self.template_path))
+        return self._env
+
+    def build_xml(self):
+        self.set_jinja_env()
+        document_id = self.company_id.document_ids.filtered(
+            lambda x: x.name == self.partner_id.invoicing_policy)
+        kwargs = {}
+        # Get the template
+        template = self._env.get_template(document_id.xml)
+        # Additional keywords used in the template
+        kwargs.update({
+            'o': self,
+            'now': fields.datetime.now(),
+            'today': fields.datetime.today(),
+        })
+        # Render the XML
+        xml_file = self.File_details(self.move_id.name + '.xml',
+                                     template.render(kwargs))
+        xml = str.encode(xml_file.filecontent)
+        # Check the rendered XML against the XSD
+        xsd_file = document_id.xsd
+        try:
+            xmlschema_doc = etree.parse(os.path.join(
+                self.template_path, '../xsd/' + xsd_file))
+            xmlschema = etree.XMLSchema(xmlschema_doc)
+            xml_doc = etree.fromstring(xml)
+            result = xmlschema.validate(xml_doc)
+            if not result:
+                xmlschema.assert_(xml_doc)
+            return xml
+        except AssertionError as e:
+            _logger.warning(etree.tostring(xml_doc))
+            raise UserError(_("XML Malformed Error: %s") % e.args)
 
     def sign_xml(self, xml):
         # Use the SSL Certificate to sign the XML
@@ -39,45 +89,44 @@ class AccountInvoice(models.Model):
     def invoice_sign(self):
         # Build the XML of the invoice
         xml = self.build_xml()
-        # Check the generate XML against the XSD
-        if self.check_xml(xml):
-            # Sign the invoice
-            if self.company_id.signer == 'odoo':
-                # Use the SSL Certificate to sign the XML
-                signed_xml = self.sign_xml(xml)
-                # Send the signed XML to SII for validation
-                reply = self.sii_validate_signed_xml(signed_xml)
-                if reply:
-                    # Check the status of the invoice
-                    status = self.sii_check_status()
-                    message = _("Status: <b>%s</b>" % (status))
-                    self.message_post(body=message)
-                else:
-                    message = _("Invoice has been sent to SII but failed with"
-                                " the following message: <b>%s</b>" %
-                                (reply))
-                    self.message_post(body=message)
-                    raise RetryableJobError(reply)
+        # Sign the invoice
+        if self.company_id.signer == 'odoo':
+            # Use the SSL Certificate to sign the XML
+            signed_xml = self.sign_xml(xml)
+            # Send the signed XML to SII for validation
+            reply = self.sii_validate_signed_xml(signed_xml)
+            if reply:
+                # Check the status of the invoice
+                status = self.sii_check_status()
+                message = _("Status: <b>%s</b>" % (status))
+                self.message_post(body=message)
             else:
-                # Send the XML to the Third Party backend
-                reply = self.company_id.backend_id.send(xml)
-                if reply:
-                    # Check the status of the invoice
-                    status = self.company_id.backend_id.check_status()
-                    message = _("Status: <b>%s</b>" % (status))
-                    self.message_post(body=message)
-                else:
-                    message = _("""Invoice has been sent to SII but failed
+                message = _("ETD has been sent to SII but failed with"
+                            " the following message: <b>%s</b>" %
+                            (reply))
+                self.message_post(body=message)
+                raise RetryableJobError(reply)
+        else:
+            # Send the XML to the Third Party backend
+            reply = self.company_id.backend_id.send(xml)
+            if reply:
+                # Check the status of the invoice
+                status = self.company_id.backend_id.check_status()
+                message = _("Status: <b>%s</b>" % (status))
+                self.message_post(body=message)
+            else:
+                message = _("""ETD has been sent to %s but failed
                                 with the following message: <b>%s</b>""" %
-                                (reply))
-                    self.message_post(body=message)
-                    raise RetryableJobError(reply)
+                            (self.company_id.backend_id.name, reply))
+                self.message_post(body=message)
+                raise RetryableJobError(reply)
 
     @api.multi
     def invoice_validate(self):
         res = super().invoice_validate()
-        sign = 'account.invoice' in self.company_id.document_ids
+        sign = self.partner_id.invoicing_policy in \
+               [x.name for x in self.company_id.document_ids]
         for invoice in self:
             if sign and invoice.type in ('out_invoice', 'out_refund'):
-                invoice.invoice_sign()
+                invoice.with_delay().invoice_sign()
         return res

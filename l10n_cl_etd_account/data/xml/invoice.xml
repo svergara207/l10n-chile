@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <EnvioDTE xmlns="http://www.sii.cl/SiiDte"
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="http://www.sii.cl/SiiDte EnvioDTE_v10.xsd"
@@ -8,16 +8,16 @@
             <RutEmisor>{{ o.company_id.partner_id.vat }}</RutEmisor>
             <RutEnvia>{{ o.partner_id.vat }}</RutEnvia>
             <RutReceptor>{{ o.partner_id.vat }}</RutReceptor>
-            <FchResol>{{ datetime.today() }}</FchResol>
+            <FchResol>{{ today }}</FchResol>
             <NroResol>80</NroResol>
-            <TmstFirmaEnv>{{ datetime.now() }}</TmstFirmaEnv>
+            <TmstFirmaEnv>{{ now }}</TmstFirmaEnv>
             <SubTotDTE>
                 <TpoDTE>{{ o.class_id.code }}</TpoDTE>
                 <NroDTE>1</NroDTE>
             </SubTotDTE>
         </Caratula>
         <DTE xmlns="http://www.sii.cl/SiiDte" version="1.0">
-            <Documento ID="{{ o.??? }}">
+            <Documento ID="{{ o.id }}">
                 <Encabezado>
                     <IdDoc>
                         <TipoDTE>{{ o.class_id.code }}</TipoDTE>
@@ -29,7 +29,7 @@
                     <Emisor>
                         <RUTEmisor>{{ o.company_id.partner_id.vat }}</RUTEmisor>
                         <RznSoc>{{ o.company_id.partner_id.name }}</RznSoc>
-                        <GiroEmis>{{ o.company_id.activity_ids[0] }}</GiroEmis>
+                        <GiroEmis>{{ o.company_id.partner_id.sii_activity_id.code }}</GiroEmis>
                         <Telefono>{{ o.company_id.partner_id.phone }}</Telefono>
                         <CorreoEmisor>{{ o.company_id.partner_id.email }}</CorreoEmisor>
                         <Acteco>{{ o.company_id.partner_id.zip }}</Acteco>
@@ -40,7 +40,7 @@
                     <Receptor>
                         <RUTRecep>{{ o.partner_id.vat }}</RUTRecep>
                         <RznSocRecep>{{ o.partner_id.name }}</RznSocRecep>
-                        <GiroRecep>{{ o.partner_id.activity_ids[0] }}</GiroRecep>
+                        <GiroRecep>{{ o.partner_id.sii_activity_id.code }}</GiroRecep>
                         <CorreoRecep>{{ o.partner_id.email }}</CorreoRecep>
                         <DirRecep>{{ o.partner_id.street }}; {{ o.partner_id.street2 }}</DirRecep>
                         <CmnaRecep>{{ o.partner_id.city_id.name }}</CmnaRecep>
@@ -53,17 +53,17 @@
                         <MntTotal>{{ o.amount_total }}</MntTotal>
                     </Totales>
                 </Encabezado>
-                {{ % for line in o.invoice_line_ids %}
+                {% for line in o.invoice_line_ids %}
                 <Detalle>
                     <NroLinDet>{{ line.index }}</NroLinDet>
                     <CdgItem>
-                        {{ % if line.product_id.barcode %}
+                        {% if line.product_id.barcode %}
                         <TpoCodigo>EAN13</TpoCodigo>
                         <VlrCodigo>{{ line.product_id.barcode }}</VlrCodigo>
-                        {{ % else %}
+                        {% else %}
                         <TpoCodigo>INT1</TpoCodigo>
                         <VlrCodigo>{{ line.product_id.default_code }}</VlrCodigo>
-                        {{ % endif %}
+                        {% endif %}
                     </CdgItem>
                     <NmbItem>{{ line.product_id.default_code }}</NmbItem>
                     <DscItem>{{ line.product_id.display_name }}</DscItem>
@@ -76,7 +76,7 @@
                 <TED version="1.0">
                     <DD>
                         <RE>{{ o.company_id.partner_id.vat }}</RE>
-                        <TD>{{ o.class_id }}</TD>
+                        <TD>{{ o.class_id.code }}</TD>
                         <F>46</F>
                         <FE>{{ o.date_invoice }}</FE>
                         <RR>{{ o.partner_id.vat }}</RR>
@@ -112,7 +112,7 @@
                         W8vcBMMROI96GR6qPIKUpw==
                     </FRMT>
                 </TED>
-                <TmstFirma>{{ datetime.now() }}</TmstFirma>
+                <TmstFirma>{{ now }}</TmstFirma>
             </Documento>
             {% if o.company_id.signer == 'odoo' %}
             <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
