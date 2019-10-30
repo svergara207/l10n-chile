@@ -121,7 +121,8 @@ class AccountInvoice(models.Model):
             if reply:
                 # Check the status of the invoice
                 status = self.company_id.backend_id.check_status()
-                message = _("Status: <b>%s</b>" % (status))
+                message = _("%s Status: <b>%s</b>" %
+                            (self.company_id.backend_id.name, status))
                 self.message_post(body=message)
             else:
                 message = _("""ETD has been sent to %s but failed
