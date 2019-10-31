@@ -19,8 +19,9 @@ _logger = logging.getLogger(__name__)
 class AccountInvoice(models.Model):
     _inherit = 'account.invoice'
 
+    signature_id = fields.Many2one("ssl.signature", string="SSL Signature")
+
     _env = None
-    _etd = ()
     File_details = namedtuple('file_details', ['filename', 'filecontent'])
     template_path = '{}/../data/xml/'.format(os.path.dirname(__file__))
 
@@ -28,7 +29,6 @@ class AccountInvoice(models.Model):
     def set_jinja_env(self):
         """Set the Jinja2 environment.
         The environment will helps the system to find the templates to render.
-        :param api_version: string, odoo api
         :return: jinja2.Environment instance.
         """
         if self._env is None:
@@ -88,10 +88,6 @@ class AccountInvoice(models.Model):
 
     def sii_check_status(self):
         # Check the status
-        res = True
-        # Post the status on the ticket
-        message = _("""SII Status: <b>%s</b>""" % (res))
-        self.message_post(body=message)
         return True
 
     @job
@@ -107,7 +103,7 @@ class AccountInvoice(models.Model):
             if reply:
                 # Check the status of the invoice
                 status = self.sii_check_status()
-                message = _("Status: <b>%s</b>" % (status))
+                message = _("SII Status: <b>%s</b>" % (status))
                 self.message_post(body=message)
             else:
                 message = _("ETD has been sent to SII but failed with"

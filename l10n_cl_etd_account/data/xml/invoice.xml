@@ -41,7 +41,7 @@
                         <RUTRecep>{{ o.partner_id.vat }}</RUTRecep>
                         <RznSocRecep>{{ o.partner_id.name }}</RznSocRecep>
                         <GiroRecep>{{ o.partner_id.sii_activity_id.code }}</GiroRecep>
-                        <CorreoRecep>{{ o.partner_id.email }}</CorreoRecep>
+                        <CorreoRecep>{{ o.partner_id.email_etd }}</CorreoRecep>
                         <DirRecep>{{ o.partner_id.street }}; {{ o.partner_id.street2 }}</DirRecep>
                         <CmnaRecep>{{ o.partner_id.city_id.name }}</CmnaRecep>
                         <CiudadRecep>{{ o.partner_id.city }}</CiudadRecep>
@@ -105,7 +105,7 @@
                                 HyGnWcYPohVpbJtp6nAnSdbrtF1X2bdqisZ6s/OnTs+Lrm4Rb/qognj3+amZW71eqpsBe8qBmypVcFznTb6bsg==
                             </FRMA>
                         </CAF>
-                        <TSTED>2019-07-14T22:11:44</TSTED>
+                        <TSTED>{{ o.date_invoice }}</TSTED>
                     </DD>
                     <FRMT algoritmo="SHA1withRSA">
                         UfpHj4avMbEefoRtodnuyn2QWTLQYqC3xYOmu2ooLqoXzo6Ll+0nRFZB+FRor56P
@@ -128,19 +128,19 @@
                         </Transforms>
                         <DigestMethod
                                 Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
-                        <DigestValue>{{ o.digest_value }}</DigestValue>
+                        <DigestValue>{{ o.ssl_signature_id.digest_value }}</DigestValue>
                     </Reference>
                 </SignedInfo>
-                <SignatureValue>{{ o.signature_value }}</SignatureValue>
+                <SignatureValue>{{ o.ssl_signature_id.signature_value }}</SignatureValue>
                 <KeyInfo>
                     <KeyValue>
                         <RSAKeyValue>
-                            <Modulus>{{ o.modulus }}</Modulus>
-                            <Exponent>{{ o.exponent }}</Exponent>
+                            <Modulus>{{ o.ssl_signature_id.modulus }}</Modulus>
+                            <Exponent>{{ o.ssl_signature_id.exponent }}</Exponent>
                         </RSAKeyValue>
                     </KeyValue>
                     <X509Data>
-                        <X509Certificate>{{ o.x509_certificate }}</X509Certificate>
+                        <X509Certificate>{{ o.ssl_signature_id.x509_certificate }}</X509Certificate>
                     </X509Data>
                 </KeyInfo>
             </Signature>
@@ -162,19 +162,19 @@
                 </Transforms>
                 <DigestMethod
                         Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
-                <DigestValue>{{ o.digest_value }}</DigestValue>
+                <DigestValue>{{ o.ssl_signature_id.digest_value }}</DigestValue>
             </Reference>
         </SignedInfo>
-        <SignatureValue>{{ o.signature_value }}</SignatureValue>
+        <SignatureValue>{{ o.ssl_signature_id.signature_value }}</SignatureValue>
         <KeyInfo>
             <KeyValue>
                 <RSAKeyValue>
-                    <Modulus>{{ o.modulus }}</Modulus>
-                    <Exponent>{{ o.exponent }}</Exponent>
+                    <Modulus>{{ o.ssl_signature_id.modulus }}</Modulus>
+                    <Exponent>{{ o.ssl_signature_id.exponent }}</Exponent>
                 </RSAKeyValue>
             </KeyValue>
             <X509Data>
-                <X509Certificate>{{ o.x509_certificate }}</X509Certificate>
+                <X509Certificate>{{ o.ssl_signature_id.x509_certificate }}</X509Certificate>
             </X509Data>
         </KeyInfo>
     </Signature>
