@@ -1,45 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <DTE xmlns="http://www.sii.cl/SiiDte" version="1.0">
-<Documento ID="F85T52"><Encabezado><IdDoc><TipoDTE>52</TipoDTE><Folio>85</Folio><FchEmis>2019-09-26</FchEmis><TipoDespacho>2</TipoDespacho><IndTraslado>1</IndTraslado></IdDoc><Emisor><RUTEmisor>76260279-2</RUTEmisor><RznSoc>SOCIEDAD IMPORTADORA PATAGONIA LIMITADA</RznSoc><GiroEmis>COMERCIO AL POR MAYOR Y MENOR, REP. VEH.AUTOMOTORES/ENSERES DOMESTICOS</GiroEmis><Telefono>+56 65 2244690</Telefono><CorreoEmisor>dte@patagoniaimportaciones.cl</CorreoEmisor><Acteco>477399</Acteco><DirOrigen>CALLE DE SERVICIO RUTA 5 KM 1013 LOCAL 2 y 3 </DirOrigen><CmnaOrigen>Puerto Montt</CmnaOrigen><CiudadOrigen>Puerto Montt</CiudadOrigen></Emisor><Receptor><RUTRecep>76056043-K</RUTRecep><RznSocRecep>SERVICIOS Y NAVIERA AGUAS DEL SUR S.A.</RznSocRecep><GiroRecep>TRANSPORTE, ALMACENAMIENTO Y COMUNICACIO</GiroRecep><CorreoRecep>FacturacionMIPYME@sii.cl</CorreoRecep><DirRecep>PARCELA SANTA ELENA 9 </DirRecep><CmnaRecep>Puerto Varas</CmnaRecep><CiudadRecep>PUERTO VARAS</CiudadRecep></Receptor><Transporte><Patente>KCHZ11</Patente><RUTTrans>76260279-2</RUTTrans><Chofer><RUTChofer>8577823-4</RUTChofer><NombreChofer>JOSE GERMAN LUTTECKE IGOR</NombreChofer></Chofer><DirDest>PARCELA SANTA ELENA 9 </DirDest><CmnaDest/><CiudadDest>PUERTO VARAS</CiudadDest></Transporte><Totales><MntNeto>3500000</MntNeto><TasaIVA>19.0</TasaIVA><IVA>665000</IVA><MntTotal>4165000</MntTotal></Totales></Encabezado><Detalle><NroLinDet>1</NroLinDet><CdgItem><TpoCodigo>INT1</TpoCodigo><VlrCodigo>HGL34-CS.PAT</VlrCodigo></CdgItem><NmbItem>Generador 1003G14 28KW 33Kva 1500RPM</NmbItem><DscItem>[HGL34-CS.PAT] Generador 1003G14 28KW 33Kva 1500RPM</DscItem><QtyItem>1.0</QtyItem><UnmdItem>Unid</UnmdItem><PrcItem>3500000.0</PrcItem><MontoItem>3500000</MontoItem></Detalle>
-<TED version="1.0"><DD><RE>76260279-2</RE><TD>52</TD><F>85</F><FE>2019-09-26</FE><RR>76056043-K</RR><RSR>SERVICIOS Y NAVIERA AGUAS DEL SUR S.A.</RSR><MNT>4165000</MNT><IT1>Generador 1003G14 28KW 33Kva 1500RPM</IT1><CAF version="1.0"><DA><RE>76260279-2</RE><RS>SOCIEDAD IMPORTADORA PATAGONIA LIMITADA</RS><TD>52</TD><RNG><D>84</D><H>133</H></RNG><FA>2019-08-01</FA><RSAPK><M>ncVWq1sYsLGvJhr7Zx+sqOXHS9g28AVCgNSpaI2ijtm2DvIxL4u8Ejd3QXVWX8Mq7jzE+ttjnPBJ+JHuC+Clkw==</M><E>Aw==</E></RSAPK><IDK>300</IDK></DA><FRMA algoritmo="SHA1withRSA">GuNMwRWWT2PoRYB4vkOsucmHqDxk6F6Ib/iSveCYCEGtk+UH3wWkkCL+1hYXuARpc9f2UbRF7DmM8m58Vv9qGQ==</FRMA></CAF><TSTED>2019-09-26T10:19:58</TSTED></DD><FRMT algoritmo="SHA1withRSA">JN/OfpuQyk34bFdelzKLWaXaWECzmSjMkCTI+OOQJkQk5aOt+KwuwL6xraMUOAIF
-VZAkkIO7qXBt8Iw/7MZNYw==</FRMT></TED><TmstFirma>2019-09-26T10:19:58</TmstFirma>
-</Documento>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#"><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI="#F85T52"><Transforms><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>HzbXH5cvio58iWCtAvO+3UlPKuU=</DigestValue></Reference></SignedInfo><SignatureValue>OEL7m8Zk7KKFlGAx2UWpZ7c/8Vr6rUuyCk6mHosClyl23QeGjXREgbFmlOnkjjcb
-uqrcAgD5qa/EMqJrU3PQoIpEzOzrDLpUIRzhvMl+xS1sRWcQ9Xf37aZ1mewkTg3r
-L/lAmagz7WlEvj+kTxEXL9waP1VvNvql+FwNT7WMQxU=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>tUn5JwsOpvbkCaRWrMny4K7tsV1TqC6cehOpVy0us3Z4lettr0VIvkdaMFw/aqX3
-7VJu7ZdzbL4OZBYr+KnIxYcY2Hlcs5IURfokFyRSwUnCNYrR3d4sxmIRPexfJmNd
-wrOuDgwJUYIUocP31itZvNCa4kpngE4nX247ru1bUrs=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>
-MIIGiDCCBXCgAwIBAgIKcijvNwAAAA6YGjANBgkqhkiG9w0BAQUFADCB0jELMAkG
-A1UEBhMCQ0wxHTAbBgNVBAgTFFJlZ2lvbiBNZXRyb3BvbGl0YW5hMREwDwYDVQQH
-EwhTYW50aWFnbzEUMBIGA1UEChMLRS1DRVJUQ0hJTEUxIDAeBgNVBAsTF0F1dG9y
-aWRhZCBDZXJ0aWZpY2Fkb3JhMTAwLgYDVQQDEydFLUNFUlRDSElMRSBDQSBGSVJN
-QSBFTEVDVFJPTklDQSBTSU1QTEUxJzAlBgkqhkiG9w0BCQEWGHNjbGllbnRlc0Bl
-LWNlcnRjaGlsZS5jbDAeFw0xOTA4MDEwMDA1NTNaFw0yMTA3MzEwMDA1NTNaMIIB
-CDELMAkGA1UEBhMCQ0wxHTAbBgNVBAgMFFJFR0nDk04gREUgTE9TIExBR09TMQ8w
-DQYDVQQHEwZPc29ybm8xMDAuBgNVBAoTJ1NPQ0lFREFEIElNUE9SVEFET1JBIFBB
-VEFHT05JQSBMSU1JVEFEQTE/MD0GA1UECxM2SU1QT1JUQUNJT04gWSBDT01FUkNJ
-QUxJWkFDSU9OIERFIFJFUFVFU1RPUyBFTiBHRU5FUkFMMSIwIAYDVQQDExlDSFJJ
-U1RJQU4gTFVUVEVDS0UgU0NIRUVMMTIwMAYJKoZIhvcNAQkBFiNjaHJpc3RpYW5A
-cGF0YWdvbmlhaW1wb3J0YWNpb25lcy5jbDCBnzANBgkqhkiG9w0BAQEFAAOBjQAw
-gYkCgYEAtUn5JwsOpvbkCaRWrMny4K7tsV1TqC6cehOpVy0us3Z4lettr0VIvkda
-MFw/aqX37VJu7ZdzbL4OZBYr+KnIxYcY2Hlcs5IURfokFyRSwUnCNYrR3d4sxmIR
-PexfJmNdwrOuDgwJUYIUocP31itZvNCa4kpngE4nX247ru1bUrsCAwEAAaOCAqkw
-ggKlMIIBTwYDVR0gBIIBRjCCAUIwggE+BggrBgEEAcNSBTCCATAwLQYIKwYBBQUH
-AgEWIWh0dHA6Ly93d3cuZS1jZXJ0Y2hpbGUuY2wvQ1BTLmh0bTCB/gYIKwYBBQUH
-AgIwgfEege4ARQBsACAAcgBlAHMAcABvAG4AZABlAHIAIABlAHMAdABlACAAZgBv
-AHIAbQB1AGwAYQByAGkAbwAgAGUAcwAgAHUAbgAgAHIAZQBxAHUAaQBzAGkAdABv
-ACAAaQBuAGQAaQBzAHAAZQBuAHMAYQBiAGwAZQAgAHAAYQByAGEAIABkAGEAcgAg
-AGkAbgBpAGMAaQBvACAAYQBsACAAcAByAG8AYwBlAHMAbwAgAGQAZQAgAGMAZQBy
-AHQAaQBmAGkAYwBhAGMAaQDzAG4ALgAgAFAAbwBzAHQAZQByAGkAbwByAG0AZQBu
-AHQAZQAsMB0GA1UdDgQWBBR3rVJ9Dj1t7W6HuxVSLp9Q3BrwQzALBgNVHQ8EBAMC
-BPAwIwYDVR0RBBwwGqAYBggrBgEEAcEBAaAMFgoxNjcyNzQ0My05MB8GA1UdIwQY
-MBaAFHjhPp/SErN6PI3NMA5Ts0MpB7NVMD4GA1UdHwQ3MDUwM6AxoC+GLWh0dHA6
-Ly9jcmwuZS1jZXJ0Y2hpbGUuY2wvZWNlcnRjaGlsZWNhRkVTLmNybDA6BggrBgEF
-BQcBAQQuMCwwKgYIKwYBBQUHMAGGHmh0dHA6Ly9vY3NwLmVjZXJ0Y2hpbGUuY2wv
-b2NzcDA9BgkrBgEEAYI3FQcEMDAuBiYrBgEEAYI3FQiC3IMvhZOMZoXVnReC4twn
-ge/sPGGE1YlihYy1EQIBZAIBBDAjBgNVHRIEHDAaoBgGCCsGAQQBwQECoAwWCjk2
-OTI4MTgwLTUwDQYJKoZIhvcNAQEFBQADggEBAIV66FjjPKnJkt1gMwXmkOahjJdG
-Tt9L592dEiEysr115EfGqgvt6PCs1XiiBoVrNtR3diOGGxqXCSpxVmz6BL75jp8G
-k4/2Xlz8o1Rpm90d5WH4GWiwyX4ZB+gW8r0ublot52Z4gcJNM6euofuICprCZYgQ
-FLMtj2UQzy7Y0VxaExThh7OPQ1ZZPNQBwwsoUY4FRJYrQOd52PNZxRmRJP+dPkc2
-ixz2w+HJ+Ee1d660x5JR5UXia96UG09XFC3uyb7uRxk2VfA92FBf7+UezmEg8Ohu
-bnwBOky9ywgGEGEryXgGEGBCeTay76k5IIIKbIsZ+XHtW0a5fPqRuMjqDEE=</X509Certificate></X509Data></KeyInfo></Signature></DTE>
+    <Documento ID="{{ o.id }}">
+        <Encabezado>
+            <IdDoc>
+                <TipoDTE>{{ o.class_id.code }}</TipoDTE>
+                <Folio>{{ o.name }}</Folio>
+                <FchEmis>{{ o.date_done }}</FchEmis>
+                <TipoDespacho>2</TipoDespacho>
+                <IndTraslado>1</IndTraslado>
+            </IdDoc>
+            <Emisor>
+                <RUTEmisor>{{ o.company_id.partner_id.vat }}</RUTEmisor>
+                <RznSoc>{{ o.company_id.partner_id.name }}</RznSoc>
+                <GiroEmis>{{ o.company_id.partner_id.sii_activity_id.code }}</GiroEmis>
+                <Telefono>{{ o.company_id.partner_id.phone }}</Telefono>
+                <CorreoEmisor>{{ o.company_id.partner_id.email }}</CorreoEmisor>
+                <Acteco>{{ o.company_id.partner_id.zip }}</Acteco>
+                <DirOrigen>{{ o.company_id.partner_id.street }}; {{ o.company_id.partner_id.street }}</DirOrigen>
+                <CmnaOrigen>{{ o.company_id.partner_id.city_id.name }}</CmnaOrigen>
+                <CiudadOrigen>{{ o.company_id.partner_id.city }}</CiudadOrigen>
+            </Emisor>
+            <Receptor>
+                <RUTRecep>{{ o.partner_id.vat }}</RUTRecep>
+                <RznSocRecep>{{ o.partner_id.name }}</RznSocRecep>
+                <GiroRecep>{{ o.partner_id.sii_activity_id.code }}</GiroRecep>
+                <CorreoRecep>{{ o.partner_id.email_etd }}</CorreoRecep>
+                <DirRecep>{{ o.partner_id.street }}; {{ o.partner_id.street2 }}</DirRecep>
+                <CmnaRecep>{{ o.partner_id.city_id.name }}</CmnaRecep>
+                <CiudadRecep>{{ o.partner_id.city }}</CiudadRecep>
+            </Receptor>
+            <Transporte>
+                <Patente>KCHZ11</Patente>
+                <RUTTrans>{{ o.carrier_id.partner_id.vat }}</RUTTrans>
+                <Chofer>
+                    <RUTChofer>8577823-4</RUTChofer>
+                    <NombreChofer>JOSE GERMAN LUTTECKE IGOR</NombreChofer>
+                </Chofer>
+                <DirDest>{{ o.carrier_id.partner_id.street }}; {{ o.carrier_id.partner_id.street2 }}</DirDest>
+                <CmnaDest>{{ o.carrier_id.partner_id.city_id.name }}</CmnaDest>
+                <CiudadDest>{{ o.carrier_id.partner_id.city }}</CiudadDest>
+            </Transporte>
+            <Totales>
+                <MntNeto>3500000</MntNeto>
+                <TasaIVA>19.0</TasaIVA>
+                <IVA>665000</IVA>
+                <MntTotal>4165000</MntTotal>
+            </Totales>
+        </Encabezado>
+        {% for line in o.move_ids %}
+        <Detalle>
+            <NroLinDet>{{ loop.index }}</NroLinDet>
+            <CdgItem>
+                {% if line.product_id.barcode %}
+                <TpoCodigo>EAN13</TpoCodigo>
+                <VlrCodigo>{{ line.product_id.barcode }}</VlrCodigo>
+                {% else %}
+                <TpoCodigo>INT1</TpoCodigo>
+                <VlrCodigo>{{ line.product_id.default_code }}</VlrCodigo>
+                {% endif %}
+            </CdgItem>
+            <NmbItem>{{ line.product_id.default_code }}</NmbItem>
+            <DscItem>{{ line.product_id.display_name }}</DscItem>
+            <QtyItem>{{ line.quantity_done }}</QtyItem>
+            <UnmdItem>{{ line.uom_id.name }}</UnmdItem>
+            <PrcItem>{{ line.product_id.standard_price }}</PrcItem>
+            <MontoItem>{{ line.product_id.standard_price * line.quantity_done }}</MontoItem>
+        </Detalle>
+        {% endfor %}
+        <TED version="1.0">
+            <DD>
+                <RE>{{ o.company_id.partner_id.vat }}</RE>
+                <TD>{{ o.class_id.code }}</TD>
+                <F>85</F>
+                <FE>{{ o.date_done }}</FE>
+                <RR>{{ o.partner_id.vat }}</RR>
+                <RSR>{{ o.partner_id.name }}</RSR>
+                <MNT>4165000</MNT>
+                <IT1>Generador 1003G14 28KW 33Kva 1500RPM</IT1>
+                <CAF version="1.0">
+                    <DA>
+                        <RE>{{ o.company_id.partner_id.vat }}</RE>
+                        <RS>{{ o.company_id.partner_id.name }}</RS>
+                        <TD>{{ o.class_id.code }}</TD>
+                        <RNG>
+                            <D>84</D>
+                            <H>133</H>
+                        </RNG>
+                        <FA>{{ o.date_done }}</FA>
+                        <RSAPK>
+                            <M>
+                                ncVWq1sYsLGvJhr7Zx+sqOXHS9g28AVCgNSpaI2ijtm2DvIxL4u8Ejd3QXVWX8Mq7jzE+ttjnPBJ+JHuC+Clkw==
+                            </M>
+                            <E>Aw==</E>
+                        </RSAPK>
+                        <IDK>300</IDK>
+                    </DA>
+                    <FRMA algoritmo="SHA1withRSA">
+                        GuNMwRWWT2PoRYB4vkOsucmHqDxk6F6Ib/iSveCYCEGtk+UH3wWkkCL+1hYXuARpc9f2UbRF7DmM8m58Vv9qGQ==
+                    </FRMA>
+                </CAF>
+                <TSTED>{{ o.date_done }}</TSTED>
+            </DD>
+            <FRMT algoritmo="SHA1withRSA">
+                JN/OfpuQyk34bFdelzKLWaXaWECzmSjMkCTI+OOQJkQk5aOt+KwuwL6xraMUOAIF
+                VZAkkIO7qXBt8Iw/7MZNYw==
+            </FRMT>
+        </TED>
+        <TmstFirma>{{ now }}</TmstFirma>
+    </Documento>
+    {% if o.company_id.signer == 'odoo' %}
+    <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+        <SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+            <CanonicalizationMethod
+                    Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+            <SignatureMethod
+                    Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+            <Reference URI="#F85T52">
+                <Transforms>
+                    <Transform
+                            Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+                </Transforms>
+                <DigestMethod
+                        Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+                <DigestValue>{{ o.ssl_signature_id.digest_value }}</DigestValue>
+            </Reference>
+        </SignedInfo>
+        <SignatureValue>{{ o.ssl_signature_id.signature_value }}</SignatureValue>
+        <KeyInfo>
+            <KeyValue>
+                <RSAKeyValue>
+                    <Modulus>{{ o.ssl_signature_id.modulus }}</Modulus>
+                    <Exponent>{{ o.ssl_signature_id.exponent }}</Exponent>
+                </RSAKeyValue>
+            </KeyValue>
+            <X509Data>
+                <X509Certificate>{{ o.ssl_signature_id.x509_certificate }}</X509Certificate>
+            </X509Data>
+        </KeyInfo>
+    </Signature>
+    {% endif %}
+</DTE>

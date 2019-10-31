@@ -2,8 +2,8 @@
 
     <record id="company_document_stock_picking" model="res.company.document">
         <field name="name">picking</field>
-        <field name="xsd">/data/xsd/DTE_v10.xsd</field>
-        <field name="xml">/data/xml/picking.xml</field>
+        <field name="xsd">DTE_v10.xsd</field>
+        <field name="xml">picking.xml</field>
     </record>
 
 </odoo>

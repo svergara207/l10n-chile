@@ -17,7 +17,7 @@
     "license": "AGPL-3",
     "depends": [
         "l10n_cl_etd_account",
-        "stock",
+        "delivery",
     ],
     "external_dependencies": {
         "python": [
@@ -26,6 +26,8 @@
     },
     "data": [
         "data/res_company_document.xml",
+        "views/stock_picking.xml",
+        "views/delivery_carrier.xml",
     ],
     "application": True,
     "development_status": "Beta",
