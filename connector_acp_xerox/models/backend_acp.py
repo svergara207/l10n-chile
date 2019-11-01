@@ -10,13 +10,15 @@ class BackendAcp(models.Model):
     _inherit = "backend.acp"
 
     def action_confirm(self):
+        # Confirm that the connection with Xerox is usable (host is alive and
+        # ready, credentials are working)
         self.status = 'confirmed'
         return True
 
     def send(self, xml):
-        # Send the XML of the document to the Third Party for signature
+        # Send the XML of the document to Xerox for signature
         return True
 
     def check_status(self):
-        # Check the status of the document with the Third Party
+        # Check the status of the document with Xerox
         return True
