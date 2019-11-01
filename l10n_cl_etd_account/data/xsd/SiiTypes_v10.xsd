@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <!--Esquema para tipos de datos generales.
 Fecha Actualizacion:  25/05/07 15:00
 
@@ -8,7 +8,7 @@ FechaHoraType :  FechaType + hora entre 00:00 y 23:59
 ImpAdicDTEType: elimina codigo 29 para DTE
 
 Fecha Actualizacion:  30/05/2011 12:00
-Se incorpora restricciÃ³n en DineroPorcentajeType para que sea dato de largo 1
+Se incorpora restricción en DineroPorcentajeType para que sea dato de largo 1
 
 Fecha Actualizacion:  07/05/2014 11:30
 ImpAdicDTEType	: se agregan los codigos 54 y 55 (SDI-1092)
@@ -306,8 +306,8 @@ ImpAdicDTEType	: se agregan el codigo de impuesto 271 (SDI-9342)
 			</xs:enumeration>
 			<xs:enumeration value="29">
 				<xs:annotation>
-					<xs:documentation>RecuperaciÃ³n Impuesto EspecÃ­fico diesel Transportistas  Para transportistas de carga
- Art 2Â° Ley NÂ°19.764/2001</xs:documentation>
+					<xs:documentation>Recuperación Impuesto Específico diesel Transportistas  Para transportistas de carga
+ Art 2° Ley N°19.764/2001</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="30">
@@ -548,7 +548,7 @@ ImpAdicDTEType	: se agregan el codigo de impuesto 271 (SDI-9342)
 			<xs:enumeration value="55"/>
 			<xs:enumeration value="271">
 				<xs:annotation>
-					<xs:documentation>Bebidas analcohÃ³licas y Minerales con elevado contenido de azÃºcares.</xs:documentation>
+					<xs:documentation>Bebidas analcohólicas y Minerales con elevado contenido de azúcares.</xs:documentation>
 				</xs:annotation>
 			</xs:enumeration>
 			<xs:enumeration value="301"/>
@@ -599,7 +599,7 @@ ImpAdicDTEType	: se agregan el codigo de impuesto 271 (SDI-9342)
 	</xs:simpleType>
 	<xs:simpleType name="MailType">
 		<xs:annotation>
-			<xs:documentation>DirecciÃ³n email</xs:documentation>
+			<xs:documentation>Dirección email</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:maxLength value="80"/>
@@ -626,7 +626,7 @@ ImpAdicDTEType	: se agregan el codigo de impuesto 271 (SDI-9342)
 	</xs:simpleType>
 	<xs:simpleType name="NroResolType">
 		<xs:annotation>
-			<xs:documentation>NÃºmero de ResoluciÃ³n</xs:documentation>
+			<xs:documentation>Número de Resolución</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:nonNegativeInteger">
 			<xs:totalDigits value="6"/>
@@ -634,7 +634,7 @@ ImpAdicDTEType	: se agregan el codigo de impuesto 271 (SDI-9342)
 	</xs:simpleType>
 	<xs:simpleType name="RznSocLargaType">
 		<xs:annotation>
-			<xs:documentation>RazÃ³n Social (max 100)</xs:documentation>
+			<xs:documentation>Razón Social (max 100)</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:maxLength value="100"/>
@@ -642,7 +642,7 @@ ImpAdicDTEType	: se agregan el codigo de impuesto 271 (SDI-9342)
 	</xs:simpleType>
 	<xs:simpleType name="RznSocCortaType">
 		<xs:annotation>
-			<xs:documentation>RazÃ³n Social (max 40)</xs:documentation>
+			<xs:documentation>Razón Social (max 40)</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:maxLength value="40"/>
@@ -651,7 +651,7 @@ ImpAdicDTEType	: se agregan el codigo de impuesto 271 (SDI-9342)
 	</xs:simpleType>
 	<xs:simpleType name="DireccSoloDTEType">
 		<xs:annotation>
-			<xs:documentation>DirecciÃ³n (maz 60)</xs:documentation>
+			<xs:documentation>Dirección (maz 60)</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:maxLength value="60"/>
@@ -659,7 +659,7 @@ ImpAdicDTEType	: se agregan el codigo de impuesto 271 (SDI-9342)
 	</xs:simpleType>
 	<xs:simpleType name="DireccType">
 		<xs:annotation>
-			<xs:documentation>DirecciÃ³n (max 80)</xs:documentation>
+			<xs:documentation>Dirección (max 80)</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:maxLength value="80"/>

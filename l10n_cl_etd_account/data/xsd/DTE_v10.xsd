@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- edited with XMLSPY v5 rel. 4 U (http://www.xmlspy.com) by Zulema Olgu√≠n Traro (Servicios de Impuestos Internos) -->
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- edited with XMLSPY v5 rel. 4 U (http://www.xmlspy.com) by Zulema OlguÌn Traro (Servicios de Impuestos Internos) -->
 <!--Esquema para documentos DTE.
 Fecha Actualizacion:  25/05/07 15:00
 
@@ -13,7 +13,7 @@ Totales Exportacion : acepta minimo 0 (incluye detalle)
 
 Fecha Actualizacion:  30-05-2011 12:00
 
-Descuento Recargo Global : se incorporar restricci√≥n en Tipo de Movimiento
+Descuento Recargo Global : se incorporar restricciÛn en Tipo de Movimiento
 			   para que sea dato de largo 1
 
   -->
@@ -146,7 +146,7 @@ Descuento Recargo Global : se incorporar restricci√≥n en Tipo de Movimiento
 													</xs:element>
 													<xs:element name="TpoImpresion" minOccurs="0">
 														<xs:annotation>
-															<xs:documentation>Tipo de impresi√≥n N (Normal)  o T (Ticket) </xs:documentation>
+															<xs:documentation>Tipo de impresiÛn N (Normal)  o T (Ticket) </xs:documentation>
 														</xs:annotation>
 														<xs:simpleType>
 															<xs:restriction base="xs:string">
@@ -220,7 +220,7 @@ Descuento Recargo Global : se incorporar restricci√≥n en Tipo de Movimiento
 													</xs:element>
 													<xs:element name="FmaPagExp" minOccurs="0">
 														<xs:annotation>
-															<xs:documentation>Forma de Pago Exportaci√≥n Tabla Formas de Pago de Aduanas</xs:documentation>
+															<xs:documentation>Forma de Pago ExportaciÛn Tabla Formas de Pago de Aduanas</xs:documentation>
 														</xs:annotation>
 														<xs:simpleType>
 															<xs:restriction base="xs:positiveInteger">
@@ -300,7 +300,7 @@ Descuento Recargo Global : se incorporar restricci√≥n en Tipo de Movimiento
 													</xs:element>
 													<xs:element name="NumCtaPago" minOccurs="0">
 														<xs:annotation>
-															<xs:documentation>N√∫mero de la cuenta del pago</xs:documentation>
+															<xs:documentation>N˙mero de la cuenta del pago</xs:documentation>
 														</xs:annotation>
 														<xs:simpleType>
 															<xs:restriction base="xs:string">
@@ -330,7 +330,7 @@ Descuento Recargo Global : se incorporar restricci√≥n en Tipo de Movimiento
 													</xs:element>
 													<xs:element name="TermPagoGlosa" minOccurs="0">
 														<xs:annotation>
-															<xs:documentation>T√©rminos del Pago - glosa</xs:documentation>
+															<xs:documentation>TÈrminos del Pago - glosa</xs:documentation>
 														</xs:annotation>
 														<xs:simpleType>
 															<xs:restriction base="xs:string">
@@ -413,13 +413,13 @@ Descuento Recargo Global : se incorporar restricci√≥n en Tipo de Movimiento
 													</xs:element>
 													<xs:element name="GuiaExport" minOccurs="0">
 														<xs:annotation>
-															<xs:documentation>Emisor de una Gu√≠a de despacho para Exportaci√≥n </xs:documentation>
+															<xs:documentation>Emisor de una GuÌa de despacho para ExportaciÛn </xs:documentation>
 														</xs:annotation>
 														<xs:complexType>
 															<xs:sequence>
 																<xs:element name="CdgTraslado" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>C√≥digo Emisor Traslado Excepcional  </xs:documentation>
+																		<xs:documentation>CÛdigo Emisor Traslado Excepcional  </xs:documentation>
 																	</xs:annotation>
 																	<xs:simpleType>
 																		<xs:restriction base="xs:positiveInteger">
@@ -433,12 +433,12 @@ Descuento Recargo Global : se incorporar restricci√≥n en Tipo de Movimiento
 																</xs:element>
 																<xs:element name="FolioAut" type="SiiDte:NroResolType" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>Folio Autorizaci√≥n ( N¬∞ de Resoluci√≥n del SI)</xs:documentation>
+																		<xs:documentation>Folio AutorizaciÛn ( N∞ de ResoluciÛn del SI)</xs:documentation>
 																	</xs:annotation>
 																</xs:element>
 																<xs:element name="FchAut" type="SiiDte:FechaType" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>Fecha de emisi√≥n de la Resoluci√≥n de autorizaci√≥n (AAAA-MM-DD)</xs:documentation>
+																		<xs:documentation>Fecha de emisiÛn de la ResoluciÛn de autorizaciÛn (AAAA-MM-DD)</xs:documentation>
 																	</xs:annotation>
 																</xs:element>
 															</xs:sequence>
@@ -707,13 +707,13 @@ Descuento Recargo Global : se incorporar restricci√≥n en Tipo de Movimiento
 													</xs:element>
 													<xs:element name="Aduana" minOccurs="0">
 														<xs:annotation>
-															<xs:documentation>documentos de Exportaci√≥n y gu√≠as de despacho </xs:documentation>
+															<xs:documentation>documentos de ExportaciÛn y guÌas de despacho </xs:documentation>
 														</xs:annotation>
 														<xs:complexType>
 															<xs:sequence>
 																<xs:element name="CodModVenta" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>C√≥digo seg√∫n  tabla "Modalidad de Venta" de aduana</xs:documentation>
+																		<xs:documentation>CÛdigo seg˙n  tabla "Modalidad de Venta" de aduana</xs:documentation>
 																	</xs:annotation>
 																	<xs:simpleType>
 																		<xs:restriction base="xs:positiveInteger">
@@ -723,7 +723,7 @@ Descuento Recargo Global : se incorporar restricci√≥n en Tipo de Movimiento
 																</xs:element>
 																<xs:element name="CodClauVenta" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>C√≥digo seg√∫n  Tabla "Cl√°usula compra-venta" de  Aduana</xs:documentation>
+																		<xs:documentation>CÛdigo seg˙n  Tabla "Cl·usula compra-venta" de  Aduana</xs:documentation>
 																	</xs:annotation>
 																	<xs:simpleType>
 																		<xs:restriction base="xs:positiveInteger">
@@ -733,12 +733,12 @@ Descuento Recargo Global : se incorporar restricci√≥n en Tipo de Movimiento
 																</xs:element>
 																<xs:element name="TotClauVenta" type="SiiDte:Dec16_2Type" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>Total  Cl√°usula de venta</xs:documentation>
+																		<xs:documentation>Total  Cl·usula de venta</xs:documentation>
 																	</xs:annotation>
 																</xs:element>
 																<xs:element name="CodViaTransp" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>Indicar el C√≥digo de la v√≠a de transporte utilizada para transportar la mercader√≠a, seg√∫n tabla V√≠as de Transporte de Aduana</xs:documentation>
+																		<xs:documentation>Indicar el CÛdigo de la vÌa de transporte utilizada para transportar la mercaderÌa, seg˙n tabla VÌas de Transporte de Aduana</xs:documentation>
 																	</xs:annotation>
 																	<xs:simpleType>
 																		<xs:restriction base="xs:positiveInteger">
@@ -748,7 +748,7 @@ Descuento Recargo Global : se incorporar restricci√≥n en Tipo de Movimiento
 																</xs:element>
 																<xs:element name="NombreTransp" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>Nombre o Identificaci√≥n del Medio de Transporte</xs:documentation>
+																		<xs:documentation>Nombre o IdentificaciÛn del Medio de Transporte</xs:documentation>
 																	</xs:annotation>
 																	<xs:simpleType>
 																		<xs:restriction base="xs:string">
@@ -758,12 +758,12 @@ Descuento Recargo Global : se incorporar restricci√≥n en Tipo de Movimiento
 																</xs:element>
 																<xs:element name="RUTCiaTransp" type="SiiDte:RUTType" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>Rut C√≠a. Transportadora</xs:documentation>
+																		<xs:documentation>Rut CÌa. Transportadora</xs:documentation>
 																	</xs:annotation>
 																</xs:element>
 																<xs:element name="NomCiaTransp" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>Nombre C√≠a. Transportadora</xs:documentation>
+																		<xs:documentation>Nombre CÌa. Transportadora</xs:documentation>
 																	</xs:annotation>
 																	<xs:simpleType>
 																		<xs:restriction base="xs:string">
@@ -773,7 +773,7 @@ Descuento Recargo Global : se incorporar restricci√≥n en Tipo de Movimiento
 																</xs:element>
 																<xs:element name="IdAdicTransp" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>Identificador Adicional C√≠a. Transportadora</xs:documentation>
+																		<xs:documentation>Identificador Adicional CÌa. Transportadora</xs:documentation>
 																	</xs:annotation>
 																	<xs:simpleType>
 																		<xs:restriction base="xs:string">
@@ -795,7 +795,7 @@ Descuento Recargo Global : se incorporar restricci√≥n en Tipo de Movimiento
 																</xs:element>
 																<xs:element name="Operador" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>C√≥digo del Operador</xs:documentation>
+																		<xs:documentation>CÛdigo del Operador</xs:documentation>
 																	</xs:annotation>
 																	<xs:simpleType>
 																		<xs:restriction base="xs:string">
@@ -806,7 +806,7 @@ Descuento Recargo Global : se incorporar restricci√≥n en Tipo de Movimiento
 																</xs:element>
 																<xs:element name="CodPtoEmbarque" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>C√≥digo del puerto de embarque seg√∫n tabla de Aduana </xs:documentation>
+																		<xs:documentation>CÛdigo del puerto de embarque seg˙n tabla de Aduana </xs:documentation>
 																	</xs:annotation>
 																	<xs:simpleType>
 																		<xs:restriction base="xs:positiveInteger">
@@ -827,7 +827,7 @@ Descuento Recargo Global : se incorporar restricci√≥n en Tipo de Movimiento
 																</xs:element>
 																<xs:element name="CodPtoDesemb" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>C√≥digo del puerto de desembarque seg√∫n tabla de Aduana </xs:documentation>
+																		<xs:documentation>CÛdigo del puerto de desembarque seg˙n tabla de Aduana </xs:documentation>
 																	</xs:annotation>
 																	<xs:simpleType>
 																		<xs:restriction base="xs:positiveInteger">
@@ -855,7 +855,7 @@ Descuento Recargo Global : se incorporar restricci√≥n en Tipo de Movimiento
 																</xs:element>
 																<xs:element name="CodUnidMedTara" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>C√≥digo de la unidad de medida  seg√∫n tabla de Aduana </xs:documentation>
+																		<xs:documentation>CÛdigo de la unidad de medida  seg˙n tabla de Aduana </xs:documentation>
 																	</xs:annotation>
 																	<xs:simpleType>
 																		<xs:restriction base="xs:positiveInteger">
@@ -865,7 +865,7 @@ Descuento Recargo Global : se incorporar restricci√≥n en Tipo de Movimiento
 																</xs:element>
 																<xs:element name="PesoBruto" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>Sumatoria de los pesos brutos de todos los √≠tems del documento</xs:documentation>
+																		<xs:documentation>Sumatoria de los pesos brutos de todos los Ìtems del documento</xs:documentation>
 																	</xs:annotation>
 																	<xs:simpleType>
 																		<xs:restriction base="xs:decimal">
@@ -876,7 +876,7 @@ Descuento Recargo Global : se incorporar restricci√≥n en Tipo de Movimiento
 																</xs:element>
 																<xs:element name="CodUnidPesoBruto" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>C√≥digo de la unidad de medida  seg√∫n tabla de Aduana </xs:documentation>
+																		<xs:documentation>CÛdigo de la unidad de medida  seg˙n tabla de Aduana </xs:documentation>
 																	</xs:annotation>
 																	<xs:simpleType>
 																		<xs:restriction base="xs:positiveInteger">
@@ -886,7 +886,7 @@ Descuento Recargo Global : se incorporar restricci√≥n en Tipo de Movimiento
 																</xs:element>
 																<xs:element name="PesoNeto" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>Sumatoria de los pesos netos de todos los √≠tems del documento</xs:documentation>
+																		<xs:documentation>Sumatoria de los pesos netos de todos los Ìtems del documento</xs:documentation>
 																	</xs:annotation>
 																	<xs:simpleType>
 																		<xs:restriction base="xs:decimal">
@@ -897,7 +897,7 @@ Descuento Recargo Global : se incorporar restricci√≥n en Tipo de Movimiento
 																</xs:element>
 																<xs:element name="CodUnidPesoNeto" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>C√≥digo de la unidad de medida  seg√∫n tabla de Aduana </xs:documentation>
+																		<xs:documentation>CÛdigo de la unidad de medida  seg˙n tabla de Aduana </xs:documentation>
 																	</xs:annotation>
 																	<xs:simpleType>
 																		<xs:restriction base="xs:positiveInteger">
@@ -927,13 +927,13 @@ Descuento Recargo Global : se incorporar restricci√≥n en Tipo de Movimiento
 																</xs:element>
 																<xs:element name="TipoBultos" minOccurs="0" maxOccurs="10">
 																	<xs:annotation>
-																		<xs:documentation>Tabla de descripci√≥n de los distintos tipos de bultos</xs:documentation>
+																		<xs:documentation>Tabla de descripciÛn de los distintos tipos de bultos</xs:documentation>
 																	</xs:annotation>
 																	<xs:complexType>
 																		<xs:sequence>
 																			<xs:element name="CodTpoBultos" minOccurs="0">
 																				<xs:annotation>
-																					<xs:documentation>C√≥digo seg√∫n  tabla "Tipos de Bultos" de aduana</xs:documentation>
+																					<xs:documentation>CÛdigo seg˙n  tabla "Tipos de Bultos" de aduana</xs:documentation>
 																				</xs:annotation>
 																				<xs:simpleType>
 																					<xs:restriction base="xs:positiveInteger">
@@ -953,7 +953,7 @@ Descuento Recargo Global : se incorporar restricci√≥n en Tipo de Movimiento
 																			</xs:element>
 																			<xs:element name="Marcas" minOccurs="0">
 																				<xs:annotation>
-																					<xs:documentation>Identificaci√≥n de marcas, cuando es distinto de contenedor</xs:documentation>
+																					<xs:documentation>IdentificaciÛn de marcas, cuando es distinto de contenedor</xs:documentation>
 																				</xs:annotation>
 																				<xs:simpleType>
 																					<xs:restriction base="xs:string">
@@ -996,18 +996,18 @@ Descuento Recargo Global : se incorporar restricci√≥n en Tipo de Movimiento
 																</xs:element>
 																<xs:element name="MntFlete" type="SiiDte:Dec14_4Type" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>Monto del flete seg√∫n moneda de venta</xs:documentation>
+																		<xs:documentation>Monto del flete seg˙n moneda de venta</xs:documentation>
 																	</xs:annotation>
 																</xs:element>
 																<xs:element name="MntSeguro" type="SiiDte:Dec14_4Type" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>Monto del seguro , seg√∫n moneda de venta</xs:documentation>
+																		<xs:documentation>Monto del seguro , seg˙n moneda de venta</xs:documentation>
 																	</xs:annotation>
 																</xs:element>
 																<xs:element name="CodPaisRecep" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>C√≥digo del pa√≠s del receptor extranjero de la mercader√≠a,
-seg√∫n tabla Pa√≠ses aduana</xs:documentation>
+																		<xs:documentation>CÛdigo del paÌs del receptor extranjero de la mercaderÌa,
+seg˙n tabla PaÌses aduana</xs:documentation>
 																	</xs:annotation>
 																	<xs:simpleType>
 																		<xs:restriction base="xs:positiveInteger">
@@ -1017,8 +1017,8 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 																</xs:element>
 																<xs:element name="CodPaisDestin" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>C√≥digo del pa√≠s de destino extranjero de la mercader√≠a,
-seg√∫n tabla Pa√≠ses aduana</xs:documentation>
+																		<xs:documentation>CÛdigo del paÌs de destino extranjero de la mercaderÌa,
+seg˙n tabla PaÌses aduana</xs:documentation>
 																	</xs:annotation>
 																	<xs:simpleType>
 																		<xs:restriction base="xs:positiveInteger">
@@ -1055,7 +1055,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 													</xs:element>
 													<xs:element name="MntMargenCom" type="SiiDte:MontoType" minOccurs="0">
 														<xs:annotation>
-															<xs:documentation>Monto Base de M√°rgenes de Comercializaci√≥n. Monto informado</xs:documentation>
+															<xs:documentation>Monto Base de M·rgenes de ComercializaciÛn. Monto informado</xs:documentation>
 														</xs:annotation>
 													</xs:element>
 													<xs:element name="TasaIVA" type="SiiDte:PctType" minOccurs="0">
@@ -1207,7 +1207,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 													</xs:element>
 													<xs:element name="MntMargComOtrMnda" type="SiiDte:Dec14_4Type" minOccurs="0">
 														<xs:annotation>
-															<xs:documentation>Monto Base de M√°rgenes de Comercializaci√≥n. Monto informado</xs:documentation>
+															<xs:documentation>Monto Base de M·rgenes de ComercializaciÛn. Monto informado</xs:documentation>
 														</xs:annotation>
 													</xs:element>
 													<xs:element name="IVAOtrMnda" type="SiiDte:Dec14_4Type" minOccurs="0">
@@ -1233,7 +1233,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 																</xs:element>
 																<xs:element name="VlrImpOtrMnda" type="SiiDte:Dec14_4Type">
 																	<xs:annotation>
-																		<xs:documentation>Valor del impuesto o retenci√≥n en otra moneda </xs:documentation>
+																		<xs:documentation>Valor del impuesto o retenciÛn en otra moneda </xs:documentation>
 																	</xs:annotation>
 																</xs:element>
 															</xs:sequence>
@@ -1341,7 +1341,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 										</xs:element>
 										<xs:element name="Retenedor" minOccurs="0">
 											<xs:annotation>
-												<xs:documentation>S√≥lo para transacciones realizadas por agentes retenedores</xs:documentation>
+												<xs:documentation>SÛlo para transacciones realizadas por agentes retenedores</xs:documentation>
 											</xs:annotation>
 											<xs:complexType>
 												<xs:sequence>
@@ -1363,7 +1363,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 													</xs:element>
 													<xs:element name="MntMargComer" type="SiiDte:MontoType" minOccurs="0">
 														<xs:annotation>
-															<xs:documentation>M√°rgenes de Comercializaci√≥n</xs:documentation>
+															<xs:documentation>M·rgenes de ComercializaciÛn</xs:documentation>
 														</xs:annotation>
 													</xs:element>
 													<xs:element name="PrcConsFinal" type="SiiDte:MontoType" minOccurs="0">
@@ -1506,7 +1506,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 													</xs:element>
 													<xs:element name="MontoItemOtrMnda" type="SiiDte:Dec14_4Type" minOccurs="0">
 														<xs:annotation>
-															<xs:documentation>Valor por l√≠nea de detalle en Otra Moneda</xs:documentation>
+															<xs:documentation>Valor por lÌnea de detalle en Otra Moneda</xs:documentation>
 														</xs:annotation>
 													</xs:element>
 												</xs:sequence>
@@ -1596,7 +1596,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 									<xs:sequence>
 										<xs:element name="NroSTI">
 											<xs:annotation>
-												<xs:documentation>N√∫mero de Subtotal </xs:documentation>
+												<xs:documentation>N˙mero de Subtotal </xs:documentation>
 											</xs:annotation>
 											<xs:simpleType>
 												<xs:restriction base="xs:positiveInteger">
@@ -1616,7 +1616,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 										</xs:element>
 										<xs:element name="OrdenSTI" minOccurs="0">
 											<xs:annotation>
-												<xs:documentation>Ubicaci√≥n para Impresi√≥n </xs:documentation>
+												<xs:documentation>UbicaciÛn para ImpresiÛn </xs:documentation>
 											</xs:annotation>
 											<xs:simpleType>
 												<xs:restriction base="xs:positiveInteger">
@@ -1636,7 +1636,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 										</xs:element>
 										<xs:element name="SubTotAdicSTI" type="SiiDte:Dec16_2Type" minOccurs="0">
 											<xs:annotation>
-												<xs:documentation>Valor de los Impuestos adicionales o espec√≠ficos del Subtotal</xs:documentation>
+												<xs:documentation>Valor de los Impuestos adicionales o especÌficos del Subtotal</xs:documentation>
 											</xs:annotation>
 										</xs:element>
 										<xs:element name="SubTotExeSTI" type="SiiDte:Dec16_2Type" minOccurs="0">
@@ -1646,12 +1646,12 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 										</xs:element>
 										<xs:element name="ValSubtotSTI" type="SiiDte:Dec16_2Type" minOccurs="0">
 											<xs:annotation>
-												<xs:documentation>Valor de la l√≠nea de subtotal</xs:documentation>
+												<xs:documentation>Valor de la lÌnea de subtotal</xs:documentation>
 											</xs:annotation>
 										</xs:element>
 										<xs:element name="LineasDeta" minOccurs="0" maxOccurs="60">
 											<xs:annotation>
-												<xs:documentation>TABLA de  L√≠neas de Detalle que se agrupan en el Subtotal</xs:documentation>
+												<xs:documentation>TABLA de  LÌneas de Detalle que se agrupan en el Subtotal</xs:documentation>
 											</xs:annotation>
 											<xs:simpleType>
 												<xs:restriction base="xs:positiveInteger"/>
@@ -1852,7 +1852,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 										</xs:element>
 										<xs:element name="TipoMovim">
 											<xs:annotation>
-												<xs:documentation>C (comisi√≥n) u O (otros cargos)</xs:documentation>
+												<xs:documentation>C (comisiÛn) u O (otros cargos)</xs:documentation>
 											</xs:annotation>
 											<xs:simpleType>
 												<xs:restriction base="xs:string">
@@ -1864,7 +1864,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 										</xs:element>
 										<xs:element name="Glosa">
 											<xs:annotation>
-												<xs:documentation>Especificaci√≥n de la comisi√≥n u otro  cargo</xs:documentation>
+												<xs:documentation>EspecificaciÛn de la comisiÛn u otro  cargo</xs:documentation>
 											</xs:annotation>
 											<xs:simpleType>
 												<xs:restriction base="xs:string">
@@ -1875,7 +1875,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 										</xs:element>
 										<xs:element name="TasaComision" type="SiiDte:PctType" minOccurs="0">
 											<xs:annotation>
-												<xs:documentation>Valor porcentual de la comisi√≥n u otro cargo</xs:documentation>
+												<xs:documentation>Valor porcentual de la comisiÛn u otro cargo</xs:documentation>
 											</xs:annotation>
 										</xs:element>
 										<xs:element name="ValComNeto" type="SiiDte:MontoType">
@@ -2298,7 +2298,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 													</xs:element>
 													<xs:element name="NumCtaPago" minOccurs="0">
 														<xs:annotation>
-															<xs:documentation>N√∫mero de la cuenta del pago</xs:documentation>
+															<xs:documentation>N˙mero de la cuenta del pago</xs:documentation>
 														</xs:annotation>
 														<xs:simpleType>
 															<xs:restriction base="xs:string">
@@ -2328,7 +2328,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 													</xs:element>
 													<xs:element name="TermPagoGlosa" minOccurs="0">
 														<xs:annotation>
-															<xs:documentation>T√©rminos del Pago - glosa</xs:documentation>
+															<xs:documentation>TÈrminos del Pago - glosa</xs:documentation>
 														</xs:annotation>
 														<xs:simpleType>
 															<xs:restriction base="xs:string">
@@ -2503,7 +2503,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 													</xs:element>
 													<xs:element name="Contacto" minOccurs="0">
 														<xs:annotation>
-															<xs:documentation>Glosa con nombre o tel√©fono de contacto en empresa del  receptor </xs:documentation>
+															<xs:documentation>Glosa con nombre o telÈfono de contacto en empresa del  receptor </xs:documentation>
 														</xs:annotation>
 														<xs:simpleType>
 															<xs:restriction base="xs:string">
@@ -2879,7 +2879,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 									<xs:sequence>
 										<xs:element name="NroSTI">
 											<xs:annotation>
-												<xs:documentation>N√∫mero de Subtotal </xs:documentation>
+												<xs:documentation>N˙mero de Subtotal </xs:documentation>
 											</xs:annotation>
 											<xs:simpleType>
 												<xs:restriction base="xs:positiveInteger">
@@ -2899,7 +2899,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 										</xs:element>
 										<xs:element name="OrdenSTI" minOccurs="0">
 											<xs:annotation>
-												<xs:documentation>Ubicaci√≥n para Impresi√≥n </xs:documentation>
+												<xs:documentation>UbicaciÛn para ImpresiÛn </xs:documentation>
 											</xs:annotation>
 											<xs:simpleType>
 												<xs:restriction base="xs:positiveInteger">
@@ -2919,7 +2919,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 										</xs:element>
 										<xs:element name="SubTotAdicSTI" type="SiiDte:Dec16_2Type" minOccurs="0">
 											<xs:annotation>
-												<xs:documentation>Valor de los Impuestos adicionales o espec√≠ficos del Subtotal</xs:documentation>
+												<xs:documentation>Valor de los Impuestos adicionales o especÌficos del Subtotal</xs:documentation>
 											</xs:annotation>
 										</xs:element>
 										<xs:element name="SubTotExeSTI" type="SiiDte:Dec16_2Type" minOccurs="0">
@@ -2929,12 +2929,12 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 										</xs:element>
 										<xs:element name="ValSubtotSTI" type="SiiDte:Dec16_2Type" minOccurs="0">
 											<xs:annotation>
-												<xs:documentation>Valor de la l√≠nea de subtotal</xs:documentation>
+												<xs:documentation>Valor de la lÌnea de subtotal</xs:documentation>
 											</xs:annotation>
 										</xs:element>
 										<xs:element name="LineasDeta" minOccurs="0" maxOccurs="60">
 											<xs:annotation>
-												<xs:documentation>TABLA de  L√≠neas de Detalle que se agrupan en el Subtotal</xs:documentation>
+												<xs:documentation>TABLA de  LÌneas de Detalle que se agrupan en el Subtotal</xs:documentation>
 											</xs:annotation>
 											<xs:simpleType>
 												<xs:restriction base="xs:positiveInteger"/>
@@ -3051,7 +3051,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 										</xs:element>
 										<xs:element name="TipoMovim">
 											<xs:annotation>
-												<xs:documentation>C (comisi√≥n) u O (otros cargos)</xs:documentation>
+												<xs:documentation>C (comisiÛn) u O (otros cargos)</xs:documentation>
 											</xs:annotation>
 											<xs:simpleType>
 												<xs:restriction base="xs:string">
@@ -3064,7 +3064,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 										</xs:element>
 										<xs:element name="Glosa">
 											<xs:annotation>
-												<xs:documentation>Especificaci√≥n de la comisi√≥n u otro  cargo</xs:documentation>
+												<xs:documentation>EspecificaciÛn de la comisiÛn u otro  cargo</xs:documentation>
 											</xs:annotation>
 											<xs:simpleType>
 												<xs:restriction base="xs:string">
@@ -3075,7 +3075,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 										</xs:element>
 										<xs:element name="TasaComision" type="SiiDte:PctType" minOccurs="0">
 											<xs:annotation>
-												<xs:documentation>Valor porcentual de la comisi√≥n u otro cargo</xs:documentation>
+												<xs:documentation>Valor porcentual de la comisiÛn u otro cargo</xs:documentation>
 											</xs:annotation>
 										</xs:element>
 										<xs:element name="ValComNeto" type="SiiDte:ValorType">
@@ -3425,7 +3425,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 													</xs:element>
 													<xs:element name="FmaPagExp" minOccurs="0">
 														<xs:annotation>
-															<xs:documentation>Forma de Pago Exportaci√≥n Tabla Formas de Pago de Aduanas</xs:documentation>
+															<xs:documentation>Forma de Pago ExportaciÛn Tabla Formas de Pago de Aduanas</xs:documentation>
 														</xs:annotation>
 														<xs:simpleType>
 															<xs:restriction base="xs:positiveInteger">
@@ -3505,7 +3505,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 													</xs:element>
 													<xs:element name="NumCtaPago" minOccurs="0">
 														<xs:annotation>
-															<xs:documentation>N√∫mero de la cuenta del pago</xs:documentation>
+															<xs:documentation>N˙mero de la cuenta del pago</xs:documentation>
 														</xs:annotation>
 														<xs:simpleType>
 															<xs:restriction base="xs:string">
@@ -3535,7 +3535,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 													</xs:element>
 													<xs:element name="TermPagoGlosa" minOccurs="0">
 														<xs:annotation>
-															<xs:documentation>T√©rminos del Pago - glosa</xs:documentation>
+															<xs:documentation>TÈrminos del Pago - glosa</xs:documentation>
 														</xs:annotation>
 														<xs:simpleType>
 															<xs:restriction base="xs:string">
@@ -3773,7 +3773,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 													</xs:element>
 													<xs:element name="Contacto" minOccurs="0">
 														<xs:annotation>
-															<xs:documentation>Glosa con nombre o tel√©fono de contacto en empresa del  receptor </xs:documentation>
+															<xs:documentation>Glosa con nombre o telÈfono de contacto en empresa del  receptor </xs:documentation>
 														</xs:annotation>
 														<xs:simpleType>
 															<xs:restriction base="xs:string">
@@ -3893,13 +3893,13 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 													</xs:element>
 													<xs:element name="Aduana" minOccurs="0">
 														<xs:annotation>
-															<xs:documentation>documentos de Exportaci√≥n y gu√≠as de despacho </xs:documentation>
+															<xs:documentation>documentos de ExportaciÛn y guÌas de despacho </xs:documentation>
 														</xs:annotation>
 														<xs:complexType>
 															<xs:sequence>
 																<xs:element name="CodModVenta" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>C√≥digo seg√∫n  tabla "Modalidad de Venta" de aduana</xs:documentation>
+																		<xs:documentation>CÛdigo seg˙n  tabla "Modalidad de Venta" de aduana</xs:documentation>
 																	</xs:annotation>
 																	<xs:simpleType>
 																		<xs:restriction base="xs:positiveInteger">
@@ -3909,7 +3909,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 																</xs:element>
 																<xs:element name="CodClauVenta" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>C√≥digo seg√∫n  Tabla "Cl√°usula compra-venta" de  Aduana</xs:documentation>
+																		<xs:documentation>CÛdigo seg˙n  Tabla "Cl·usula compra-venta" de  Aduana</xs:documentation>
 																	</xs:annotation>
 																	<xs:simpleType>
 																		<xs:restriction base="xs:positiveInteger">
@@ -3919,12 +3919,12 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 																</xs:element>
 																<xs:element name="TotClauVenta" type="SiiDte:Dec16_2Type" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>Total  Cl√°usula de venta</xs:documentation>
+																		<xs:documentation>Total  Cl·usula de venta</xs:documentation>
 																	</xs:annotation>
 																</xs:element>
 																<xs:element name="CodViaTransp" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>Indicar el C√≥digo de la v√≠a de transporte utilizada para transportar la mercader√≠a, seg√∫n tabla V√≠as de Transporte de Aduana</xs:documentation>
+																		<xs:documentation>Indicar el CÛdigo de la vÌa de transporte utilizada para transportar la mercaderÌa, seg˙n tabla VÌas de Transporte de Aduana</xs:documentation>
 																	</xs:annotation>
 																	<xs:simpleType>
 																		<xs:restriction base="xs:positiveInteger">
@@ -3934,7 +3934,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 																</xs:element>
 																<xs:element name="NombreTransp" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>Nombre o Identificaci√≥n del Medio de Transporte</xs:documentation>
+																		<xs:documentation>Nombre o IdentificaciÛn del Medio de Transporte</xs:documentation>
 																	</xs:annotation>
 																	<xs:simpleType>
 																		<xs:restriction base="xs:string">
@@ -3944,12 +3944,12 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 																</xs:element>
 																<xs:element name="RUTCiaTransp" type="SiiDte:RUTType" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>Rut C√≠a. Transportadora</xs:documentation>
+																		<xs:documentation>Rut CÌa. Transportadora</xs:documentation>
 																	</xs:annotation>
 																</xs:element>
 																<xs:element name="NomCiaTransp" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>Nombre C√≠a. Transportadora</xs:documentation>
+																		<xs:documentation>Nombre CÌa. Transportadora</xs:documentation>
 																	</xs:annotation>
 																	<xs:simpleType>
 																		<xs:restriction base="xs:string">
@@ -3959,7 +3959,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 																</xs:element>
 																<xs:element name="IdAdicTransp" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>Identificador Adicional C√≠a. Transportadora</xs:documentation>
+																		<xs:documentation>Identificador Adicional CÌa. Transportadora</xs:documentation>
 																	</xs:annotation>
 																	<xs:simpleType>
 																		<xs:restriction base="xs:string">
@@ -3981,7 +3981,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 																</xs:element>
 																<xs:element name="Operador" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>C√≥digo del Operador</xs:documentation>
+																		<xs:documentation>CÛdigo del Operador</xs:documentation>
 																	</xs:annotation>
 																	<xs:simpleType>
 																		<xs:restriction base="xs:string">
@@ -3992,7 +3992,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 																</xs:element>
 																<xs:element name="CodPtoEmbarque" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>C√≥digo del puerto de embarque seg√∫n tabla de Aduana </xs:documentation>
+																		<xs:documentation>CÛdigo del puerto de embarque seg˙n tabla de Aduana </xs:documentation>
 																	</xs:annotation>
 																	<xs:simpleType>
 																		<xs:restriction base="xs:positiveInteger">
@@ -4013,7 +4013,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 																</xs:element>
 																<xs:element name="CodPtoDesemb" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>C√≥digo del puerto de desembarque seg√∫n tabla de Aduana </xs:documentation>
+																		<xs:documentation>CÛdigo del puerto de desembarque seg˙n tabla de Aduana </xs:documentation>
 																	</xs:annotation>
 																	<xs:simpleType>
 																		<xs:restriction base="xs:positiveInteger">
@@ -4041,7 +4041,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 																</xs:element>
 																<xs:element name="CodUnidMedTara" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>C√≥digo de la unidad de medida  seg√∫n tabla de Aduana </xs:documentation>
+																		<xs:documentation>CÛdigo de la unidad de medida  seg˙n tabla de Aduana </xs:documentation>
 																	</xs:annotation>
 																	<xs:simpleType>
 																		<xs:restriction base="xs:positiveInteger">
@@ -4051,7 +4051,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 																</xs:element>
 																<xs:element name="PesoBruto" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>Sumatoria de los pesos brutos de todos los √≠tems del documento</xs:documentation>
+																		<xs:documentation>Sumatoria de los pesos brutos de todos los Ìtems del documento</xs:documentation>
 																	</xs:annotation>
 																	<xs:simpleType>
 																		<xs:restriction base="xs:decimal">
@@ -4062,7 +4062,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 																</xs:element>
 																<xs:element name="CodUnidPesoBruto" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>C√≥digo de la unidad de medida  seg√∫n tabla de Aduana </xs:documentation>
+																		<xs:documentation>CÛdigo de la unidad de medida  seg˙n tabla de Aduana </xs:documentation>
 																	</xs:annotation>
 																	<xs:simpleType>
 																		<xs:restriction base="xs:positiveInteger">
@@ -4072,7 +4072,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 																</xs:element>
 																<xs:element name="PesoNeto" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>Sumatoria de los pesos netos de todos los √≠tems del documento</xs:documentation>
+																		<xs:documentation>Sumatoria de los pesos netos de todos los Ìtems del documento</xs:documentation>
 																	</xs:annotation>
 																	<xs:simpleType>
 																		<xs:restriction base="xs:decimal">
@@ -4083,7 +4083,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 																</xs:element>
 																<xs:element name="CodUnidPesoNeto" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>C√≥digo de la unidad de medida  seg√∫n tabla de Aduana </xs:documentation>
+																		<xs:documentation>CÛdigo de la unidad de medida  seg˙n tabla de Aduana </xs:documentation>
 																	</xs:annotation>
 																	<xs:simpleType>
 																		<xs:restriction base="xs:positiveInteger">
@@ -4113,13 +4113,13 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 																</xs:element>
 																<xs:element name="TipoBultos" minOccurs="0" maxOccurs="10">
 																	<xs:annotation>
-																		<xs:documentation>Tabla de descripci√≥n de los distintos tipos de bultos</xs:documentation>
+																		<xs:documentation>Tabla de descripciÛn de los distintos tipos de bultos</xs:documentation>
 																	</xs:annotation>
 																	<xs:complexType>
 																		<xs:sequence>
 																			<xs:element name="CodTpoBultos" minOccurs="0">
 																				<xs:annotation>
-																					<xs:documentation>C√≥digo seg√∫n  tabla "Tipos de Bultos" de aduana</xs:documentation>
+																					<xs:documentation>CÛdigo seg˙n  tabla "Tipos de Bultos" de aduana</xs:documentation>
 																				</xs:annotation>
 																				<xs:simpleType>
 																					<xs:restriction base="xs:positiveInteger">
@@ -4139,7 +4139,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 																			</xs:element>
 																			<xs:element name="Marcas" minOccurs="0">
 																				<xs:annotation>
-																					<xs:documentation>Identificaci√≥n de marcas, cuando es distinto de contenedor</xs:documentation>
+																					<xs:documentation>IdentificaciÛn de marcas, cuando es distinto de contenedor</xs:documentation>
 																				</xs:annotation>
 																				<xs:simpleType>
 																					<xs:restriction base="xs:string">
@@ -4182,18 +4182,18 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 																</xs:element>
 																<xs:element name="MntFlete" type="SiiDte:Dec14_4Type" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>Monto del flete seg√∫n moneda de venta</xs:documentation>
+																		<xs:documentation>Monto del flete seg˙n moneda de venta</xs:documentation>
 																	</xs:annotation>
 																</xs:element>
 																<xs:element name="MntSeguro" type="SiiDte:Dec14_4Type" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>Monto del seguro , seg√∫n moneda de venta</xs:documentation>
+																		<xs:documentation>Monto del seguro , seg˙n moneda de venta</xs:documentation>
 																	</xs:annotation>
 																</xs:element>
 																<xs:element name="CodPaisRecep" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>C√≥digo del pa√≠s del receptor extranjero de la mercader√≠a,
-seg√∫n tabla Pa√≠ses aduana</xs:documentation>
+																		<xs:documentation>CÛdigo del paÌs del receptor extranjero de la mercaderÌa,
+seg˙n tabla PaÌses aduana</xs:documentation>
 																	</xs:annotation>
 																	<xs:simpleType>
 																		<xs:restriction base="xs:positiveInteger">
@@ -4203,8 +4203,8 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 																</xs:element>
 																<xs:element name="CodPaisDestin" minOccurs="0">
 																	<xs:annotation>
-																		<xs:documentation>C√≥digo del pa√≠s de destino extranjero de la mercader√≠a,
-seg√∫n tabla Pa√≠ses aduana</xs:documentation>
+																		<xs:documentation>CÛdigo del paÌs de destino extranjero de la mercaderÌa,
+seg˙n tabla PaÌses aduana</xs:documentation>
 																	</xs:annotation>
 																	<xs:simpleType>
 																		<xs:restriction base="xs:positiveInteger">
@@ -4226,7 +4226,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 												<xs:sequence>
 													<xs:element name="TpoMoneda" type="SiiDte:TipMonType">
 														<xs:annotation>
-															<xs:documentation>Tipo de Moneda en que se regisrtra la transacci√≥n.  Tabla de Monedas  de Aduanas</xs:documentation>
+															<xs:documentation>Tipo de Moneda en que se regisrtra la transacciÛn.  Tabla de Monedas  de Aduanas</xs:documentation>
 														</xs:annotation>
 													</xs:element>
 													<xs:element name="MntExe">
@@ -4442,7 +4442,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 													</xs:element>
 													<xs:element name="TipCodSubQty" minOccurs="0">
 														<xs:annotation>
-															<xs:documentation>Tipo de C√≥digo Subcantidad</xs:documentation>
+															<xs:documentation>Tipo de CÛdigo Subcantidad</xs:documentation>
 														</xs:annotation>
 														<xs:simpleType>
 															<xs:restriction base="xs:string">
@@ -4522,7 +4522,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 													</xs:element>
 													<xs:element name="MontoItemOtrMnda">
 														<xs:annotation>
-															<xs:documentation>Valor por l√≠nea de detalle en Otra Moneda</xs:documentation>
+															<xs:documentation>Valor por lÌnea de detalle en Otra Moneda</xs:documentation>
 														</xs:annotation>
 														<xs:simpleType>
 															<xs:restriction base="SiiDte:Dec14_4Type">
@@ -4643,7 +4643,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 									<xs:sequence>
 										<xs:element name="NroSTI">
 											<xs:annotation>
-												<xs:documentation>N√∫mero de Subtotal </xs:documentation>
+												<xs:documentation>N˙mero de Subtotal </xs:documentation>
 											</xs:annotation>
 											<xs:simpleType>
 												<xs:restriction base="xs:positiveInteger">
@@ -4663,7 +4663,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 										</xs:element>
 										<xs:element name="OrdenSTI" minOccurs="0">
 											<xs:annotation>
-												<xs:documentation>Ubicaci√≥n para Impresi√≥n </xs:documentation>
+												<xs:documentation>UbicaciÛn para ImpresiÛn </xs:documentation>
 											</xs:annotation>
 											<xs:simpleType>
 												<xs:restriction base="xs:positiveInteger">
@@ -4683,7 +4683,7 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 										</xs:element>
 										<xs:element name="SubTotAdicSTI" type="SiiDte:Dec16_2Type" minOccurs="0">
 											<xs:annotation>
-												<xs:documentation>Valor de los Impuestos adicionales o espec√≠ficos del Subtotal</xs:documentation>
+												<xs:documentation>Valor de los Impuestos adicionales o especÌficos del Subtotal</xs:documentation>
 											</xs:annotation>
 										</xs:element>
 										<xs:element name="SubTotExeSTI" type="SiiDte:Dec16_2Type" minOccurs="0">
@@ -4693,12 +4693,12 @@ seg√∫n tabla Pa√≠ses aduana</xs:documentation>
 										</xs:element>
 										<xs:element name="ValSubtotSTI" type="SiiDte:Dec16_2Type" minOccurs="0">
 											<xs:annotation>
-												<xs:documentation>Valor de la l√≠nea de subtotal</xs:documentation>
+												<xs:documentation>Valor de la lÌnea de subtotal</xs:documentation>
 											</xs:annotation>
 										</xs:element>
 										<xs:element name="LineasDeta" minOccurs="0" maxOccurs="60">
 											<xs:annotation>
-												<xs:documentation>TABLA de  L√≠neas de Detalle que se agrupan en el Subtotal</xs:documentation>
+												<xs:documentation>TABLA de  LÌneas de Detalle que se agrupan en el Subtotal</xs:documentation>
 											</xs:annotation>
 											<xs:simpleType>
 												<xs:restriction base="xs:positiveInteger"/>

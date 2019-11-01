@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <!-- Schema for XML Signatures
     http://www.w3.org/2000/09/xmldsig#
     $Revision: 1.1 $ on $Date: 2002/02/08 20:32:26 $ by $Author: reagle $
@@ -14,7 +14,7 @@
     [1] http://www.w3.org/Consortium/Legal/copyright-software-19980720
     [2] http://www.w3.org/Consortium/Legal/IPR-FAQ-20000620.html#DTD 
 
-Fecha ultima actualizaciÃ³n : 10-03-05
+Fecha ultima actualización : 10-03-05
 
 -->
 <ds:schema targetNamespace="http://www.w3.org/2000/09/xmldsig#" xmlns:xmldsig="http://www.w3.org/2000/09/xmldsig#" xmlns:ds="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">

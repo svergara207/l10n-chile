@@ -16,22 +16,13 @@
     "website": "https://github.com/OCA/l10n-chile",
     "license": "AGPL-3",
     "depends": [
-        "connector_acp",
-        "document",
-        "res_partner_email_etd",
-        "l10n_cl_toponym",
+        "l10n_cl_etd",
         "l10n_cl_chart_of_account",
         "l10n_cl_invoicing_policy",
         "l10n_cl_sii_reference",
-        "l10n_cl_sii_activity",
-        "l10n_cl_sii_folio",
     ],
-    "external_dependencies": {
-        "python": ["jinja2"]
-    },
     "data": [
         "security/ir.model.access.csv",
-        "data/backend.acp.csv",
         "data/res_company_document.xml",
     ],
     "application": True,
