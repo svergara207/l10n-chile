@@ -5,7 +5,8 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 from odoo import fields, models
 
-class ResCompanyDocument(models.Model):
-    _inherit = 'res.company.document'
 
-    name = fields.Selection(selection_add=[('picking', 'Picking')])
+class ResCompanyDocument(models.Model):
+    _inherit = "res.company.document"
+
+    model = fields.Selection(selection_add=[("stock.picking", "Picking")])

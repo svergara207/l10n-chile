@@ -16,14 +16,10 @@
     "website": "https://github.com/OCA/l10n-chile",
     "license": "AGPL-3",
     "depends": [
-        "l10n_cl_etd_account",
+        "l10n_cl_etd",
         "delivery",
+        "stock",
     ],
-    "external_dependencies": {
-        "python": [
-            "jinja2",
-        ]
-    },
     "data": [
         "data/res_company_document.xml",
         "views/stock_picking.xml",

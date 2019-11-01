@@ -1,9 +1,10 @@
 <odoo>
 
     <record id="company_document_stock_picking" model="res.company.document">
-        <field name="name">picking</field>
-        <field name="xsd">DTE_v10.xsd</field>
-        <field name="xml">picking.xml</field>
+        <field name="name">Picking</field>
+        <field name="model">stock.picking</field>
+        <field name="xsd" type="base64" file="l10n_cl_etd_stock/data/xsd/DTE_v10.xsd"/>
+        <field name="xml" type="base64" file="l10n_cl_etd_stock/data/xml/picking.xml"/>
     </record>
 
 </odoo>
