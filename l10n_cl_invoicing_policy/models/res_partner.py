@@ -11,7 +11,7 @@ class ResPartner(models.Model):
     _inherit = "res.partner"
 
     def _default_invoicing_policy(self):
-        if self.company_type == 'company':
+        if self.company_type == 'company' or self.parent_id:
             return 'invoice'
         return 'ticket'
 
@@ -23,19 +23,21 @@ class ResPartner(models.Model):
         default=_default_invoicing_policy,
         help="""
         * Ticket: Only for individuals. 1 invoice for each delivery order.
-        * Invoice: Only for companies. The VAT is required. 1 invoice for each
-          delivery order. Requires the customer PO # on the SO/Invoice.
-        * Electronic Guide: Only for companies. 1 invoice at the end of the
-          month for all the delivery orders of that month.""")
+        * Invoice: Only for companies and their children. The VAT is required.
+          1 invoice for each delivery order.
+          Requires the customer PO # on the SO/Invoice.
+        * Electronic Guide: Only for companies and their children.
+          1 invoice at the end of the month for all the delivery orders of
+          that month.""")
 
-    @api.constrains('is_company', 'invoicing_policy')
+    @api.constrains('is_company', 'invoicing_policy', 'parent_id')
     def check_invoicing_policy(self):
-        if self.invoicing_policy == 'ticket':
-            if self.is_company:
+        if self.is_company or self.parent_id:
+            if self.invoicing_policy == 'ticket':
                 raise UserError(_('The invoicing policy Ticket only applies '
                                   'to individuals.'))
         else:
-            if not self.is_company:
+            if self.invoicing_policy != 'ticket':
                 raise UserError(_('The selected invoicing policy only applies'
                                   ' to companies.'))
 
