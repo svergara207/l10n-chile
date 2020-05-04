@@ -28,10 +28,17 @@ class EtdDocument(models.Model):
         ])
         recs['stock.picking'] = self.env["stock.picking"].search([
             ("picking_type_code", "=", "outgoing"),
-            ("state", "=", "done"),
-            ("date_done", ">=", run_date),
-            ("date_done", "<=", next_date),
+            # Deliveries are signed once they are waiting or confirmed
+            # They will ony be "done" when delivered at customer site
+            ("state", "not in", ("draft", "cancel")),
+            ("scheduled_date", ">=", run_date),
+            ("scheduled_date", "<", next_date),
             ("class_id", "in", class_ids)
+        ])
+        recs['stock.picking.batch'] = self.env["stock.picking.batch"].search([
+            ("date", "=", run_date),
+            ("class_id", "in", class_ids),
+            ('picking_ids', '!=', False),
         ])
         return recs
 
