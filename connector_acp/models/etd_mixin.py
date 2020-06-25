@@ -302,7 +302,7 @@ class EtdMixin(models.AbstractModel):
                 "%s Status: <b>%s</b>" % (backend.name, status.get('message'))
             )
             self.message_post(body=message)
-            self.date_sign = now
+            self.date_sign = fields.Datetime.now()
         else:
             message = _(
                 "ETD has been sent to %s but failed with"
