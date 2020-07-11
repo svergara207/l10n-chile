@@ -6,10 +6,17 @@
         <field name="model">ir.sequence</field>
         <field name="inherit_id" ref="base.sequence_view"/>
         <field name="arch" type="xml">
+            <sheet position="before">
+                <header>
+                    <button string="Check Minimum" type="object" name="check_minimum"/>
+                </header>
+            </sheet>
             <field name="number_next_actual" position="after">
                 <field name="class_id" options="{'no_open': True, 'no_create': True}"/>
                 <field name="is_dte"/>
                 <field name="forced_by_caf"/>
+                <field name="qty_available" readonly="1"/>
+                <field name="nivel_minimo"/>
             </field>
             <xpath expr='//notebook' position="inside">
                 <page string="CAF Files"

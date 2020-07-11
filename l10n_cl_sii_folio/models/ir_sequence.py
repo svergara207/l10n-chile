@@ -5,8 +5,9 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 from datetime import datetime
 import logging
+import requests
 import pytz
-from odoo import fields, models, SUPERUSER_ID, _
+from odoo import api, fields, models, SUPERUSER_ID, _
 from odoo.exceptions import UserError
 
 _logger = logging.getLogger(__name__)
@@ -46,6 +47,9 @@ class IrSequence(models.Model):
     qty_available = fields.Integer(
         string="Quantity Available", compute="_compute_qty_available")
     forced_by_caf = fields.Boolean(string="Forced By CAF", default=True)
+
+    nivel_minimo = fields.Integer(
+        string="Nivel Mínimo de Folios", default=5)
 
     def _get_folio(self):
         return self.number_next_actual
@@ -121,3 +125,20 @@ class IrSequence(models.Model):
             # Update the next number if we finished the CAF
             self.update_next_by_caf(folio)
         return folio
+
+    def _check_minimun(self):
+        if self.qty_available <= self.nivel_minimo:
+            values = {
+                'model_id': 'ir.sequence',
+                'email_to': 'nramirez@konos.cl' ,
+                'model': 'ir.sequence',
+                'body': 'Por Favor Cargar Folios (CAFS en Odoo): %s ' % (self.name),
+                'subject': 'Aviso de Carga Minima de Folios',
+                }
+            send_mail = self.env['mail.mail'].sudo().create(values)
+            send_mail.send()
+
+    @api.one
+    def check_minimum(self):
+        if self.is_dte:
+            self._check_minimun()
