@@ -76,9 +76,9 @@
 {# 41 RUTSolicita #};
 {# 42 Patente #};
 {# 43 RUTTrans TODO o.carrier_id.partner_id.vat #};
-{# 44 DirDest #}{{ esc(' '.join([o.partner_shipping_id.street or '', o.partner_shipping_id.street2 or ''])[:60]) }};
-{# 45 CmnaDest #}{{ esc(o.partner_shipping_id.city_id.name) or ''}};
-{# 46 CiudadDest #}{{ esc(o.partner_shipping_id.city or '') }};
+{# 44 DirDest #}{{ esc(' '.join([o.partner_id.street or '', o.partner_id.street2 or ''])[:60]) }};
+{# 45 CmnaDest #}{{ esc(o.partner_id.city_id.name) or ''}};
+{# 46 CiudadDest #}{{ esc(o.partner_id.city or '') }};
 {% set totals = namespace(amount_exempt=0) %}
 {% for line in o.invoice_line_ids %}
     {% if line.price_tax == 0 %}
