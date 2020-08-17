@@ -36,7 +36,7 @@
 {# 1 Cliente #}{{ (o.company_id.vat or '').replace('.', '')[:8] }};
 {# 2 Version #}1.0;
 {# 3 Tipo #}{{ o.class_id.code }};
-{# 4 Folio #}{{ digits_only(o.number) }};
+{# 4 Folio #}{{ digits_only(o.number)|int }};
 {# 5 FechEmis #}{{ o.date_invoice and o.date_invoice.strftime('%Y-%m-%d') }};
 {# 6 IndNoRebaja TODO Nota de credito fuera de plazo #};
 {# 7 TipoDespacho TODO o.transport_type #}{{2 if o.class_id.code in (33, 52) else ''}};
@@ -210,7 +210,7 @@
 {% set price_unit_with_tax = (line.price_total - discount_amount) / line.quantity %}
 {# 1 Cliente #}{{ (o.company_id.vat or '').replace('.', '')[:8] }};
 {# 2 Tipo #}{{ o.class_id.code }};
-{# 3 Folio #}{{ digits_only(o.number) }};
+{# 3 Folio #}{{ digits_only(o.number)|int }};
 {# 4 NroLinDet #}{{ totals.line_num }};
 {# 5 TpoCodigo #}INT1;
 {# 6 VlrCodigo #}{{ line.product_id.ref_etd[:8] }};
@@ -293,11 +293,11 @@
 {% set totals.line_num = totals.line_num + 1 %}
 {# 1 Cliente #}{{( o.company_id.vat or '').replace('.', '')[:8] }};
 {# 2 Tipo #}{{ o.class_id.code }};
-{# 3 Folio #}{{ digits_only(o.number) }};
+{# 3 Folio #}{{ digits_only(o.number)|int }};
 {# 2 NroLineaRef #}{{ totals.line_num }};
 {# 3 TpoDocRef #}{{ ref.class_id.prefix if ref.class_id.prefix == "HES" else ref.class_id.code }};
 {# 4 IndGlobal #};
-{# 5 FolioRef #}{{ digits_only(ref.name) or '' }};
+{# 5 FolioRef #}{{ digits_only(ref.name)|int }};
 {# 6 RUTOtr #};
 {# 8 FchRef #}{{ ref.date.strftime('%Y-%m-%d') }};
 {# 9 CodRef #}{{ ref.code or "" }};
@@ -325,7 +325,7 @@
 {% set totals.line_num = totals.line_num + 1 %}
 {# 1 Cliente #}{{(o.company_id.vat or '').replace('.', '')[:8]}};
 {# 2 Tipo #}{{o.class_id.code}};
-{# 3 Folio #}{{o.number}};
+{# 3 Folio #}{{ digits_only(o.number)|int}};
 {# 2 NroLineaDR #}{{ totals.line_num }};
 {# 5 TpoMov #};
 {# 6 GlosaDR #};
@@ -351,7 +351,7 @@
 {% set payment = o.payment_ids[:1] %}
 {# 1 Cliente #}{{ (o.company_id.vat or '').replace('.', '')[:8] }};
 {# 2 Tipo #}{{ o.class_id.code }};
-{# 3 Folio #}{{ digits_only(o.number) }};
+{# 3 Folio #}{{ digits_only(o.number)|int}};
 {# 4 Número copias #}2;
 {# 5 Observaciones #}{{ payment and ("Pagado %s - %s" % (payment.journal_id.name, payment.communication)) or "" }};
 {# 6 Fecha Cancelación #};
@@ -392,7 +392,7 @@
 {% set totals.line_num = totals.line_num + 1 %}
 {# 1 Cliente #}{{(o.company_id.vat or '').replace('.', '')[:8]}};
 {# 2 Tipo #}{{o.class_id.code}};
-{# 3 Folio #}{{ digits_only(o.number) }};
+{# 3 Folio #}{{ digits_only(o.number)|int}};
 {# 4 Numero Detalle #}{{ totals.line_num }};
 {# 5 TpoCodigo #}INT1;
 {# 6 Código del item 01 #}{{ line.product_id.ref_etd[:8] }};
