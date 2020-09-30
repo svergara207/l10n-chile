@@ -50,7 +50,7 @@
 {# 15 MedioPago #};
 {# 16 TermPagoCdg #};
 {# 17 TermPagoDias #};
-{# 18 FchVenc #}{{ o.date_invoice and o.date_invoice.strftime('%Y-%m-%d') }};
+{# 18 FchVenc #}{{ o.date_due and o.date_due.strftime('%Y-%m-%d') }};
 {# 19 RUTEmisor #}{{ (o.company_id.vat or '').replace('.', '') }};
 {# 20 RznSoc #}{{ esc(o.company_id.name) }};
 {# 21 GiroEmis #}{{ esc(o.company_id.partner_id.activity_description or '.') }};
