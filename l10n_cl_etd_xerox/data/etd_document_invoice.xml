@@ -297,7 +297,7 @@
 {# 2 NroLineaRef #}{{ totals.line_num }};
 {# 3 TpoDocRef #}{{ ref.class_id.prefix if ref.class_id.prefix == "HES" else ref.class_id.code }};
 {# 4 IndGlobal #};
-{# 5 FolioRef #}{{ digits_only(ref.name)|int }};
+{# 5 FolioRef #}{{ref.name}};
 {# 6 RUTOtr #};
 {# 8 FchRef #}{{ ref.date.strftime('%Y-%m-%d') }};
 {# 9 CodRef #}{{ ref.code or "" }};
