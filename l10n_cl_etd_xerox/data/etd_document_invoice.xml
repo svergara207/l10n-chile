@@ -371,7 +371,7 @@
 {# 20 IABA #};
 {# 21 Hora emisión #}{{o.create_date.strftime('%H:%M')}};
 {# 22 Afecto IVA #}{{ o.amount_base_tax|int }};
-{# 23 Número de pedido #}{{ digits_only(o.origin) }}
+{# 23 Número de pedido #}{{ digits_only(o.origin[:7]) }}
 {{ '\n' }}
     </field>
 </record>
