@@ -272,7 +272,7 @@
 {% if line.picking_type_id.code == 'outgoing' %}
 {% set totals.line_num = totals.line_num + 1 %}
 {# 1 Cliente #}{{ (transp.vat or '').replace('.', '')[:8]}};
-{# 2 Tipo #}{{ tipo }};
+{# 2 Tipo #}5;
 {# 3 Folio #}{{ digits_only(o.name) + tipo }};
 {# 4 NroLinDet #}{{ totals.line_num }};
 {# 5 TpoCodigo #};
