@@ -7,3 +7,4 @@ from . import etd_mixin
 from . import etd_document
 from . import stock_warehouse
 from . import stock_picking_batch
+from . import sii_guias
